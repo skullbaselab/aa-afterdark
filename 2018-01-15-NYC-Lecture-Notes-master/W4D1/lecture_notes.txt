@@ -1,0 +1,43 @@
+Rails Controllers - Lecture Agenda
+
+1) Our Story So Far...
+
+* Ruby
+* SQL
+* Rails
+
+2) What is HTTP?
+
+* Verbs
+  * GET - get back info/a resource
+  * POST - create a resource that didn't exist before
+  * PATCH/PUT - update an existing resource
+  * DELETE - destroy a resource
+
+* Path - tells us where the resource is located
+  
+* The Request Response Cycle
+  * Parts of a Request
+    * verb
+    * path
+  * Parts of a Response
+    * status code
+    * response body - string of the data
+    
+* HTTP is stateless! no info from previous requests preserved across requests
+
+* API?
+  * raw data representation of a page
+
+3) Router and Routes
+
+* REST
+* How does Rails incorporate HTTP?
+
+4) Controllers
+
+* MVC
+* JSON
+* Params
+
+YOU CAN DO IT!

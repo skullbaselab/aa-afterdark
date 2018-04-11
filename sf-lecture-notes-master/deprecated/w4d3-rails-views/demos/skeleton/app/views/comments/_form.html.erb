@@ -1,0 +1,19 @@
+<h3>Post a Comment</h3>
+
+<form action="<%= article_comments_url(article) %>" method="POST">
+  <input type="hidden" 
+        name="authenticity_token" 
+        value="<%= form_authenticity_token %>">
+  <label for="comment-author-name">Your Name:</label>
+  <input type="text" 
+         id="comment-author-name"
+         name="comment[author_name]"
+         value="<%= current_user.name %>">
+  <br>
+  <br>
+  <label for="comment-body">Body</label>
+  <textarea id="comment-body" name="comment[body]"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="Post Comment">
+</form>

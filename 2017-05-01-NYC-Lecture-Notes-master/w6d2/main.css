@@ -1,0 +1,51 @@
+/*
+CSS AGENDA
+
+1) Box Model: Height, Width, Padding, Margin
+2) Floating / Flexing
+3) Positioning
+
+*/
+
+.first {
+  background: red;
+}
+
+.second {
+  background: green;
+}
+
+.third {
+  background: yellow;
+}
+
+div {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div:hover {
+  background-color: blanchedalmond;
+}
+
+header {
+  height: 100vh;
+  margin: 100px;
+  background: cornflowerblue;
+}
+
+.spandex {
+  color: red;
+}
+
+body {
+  background: wheat;
+}

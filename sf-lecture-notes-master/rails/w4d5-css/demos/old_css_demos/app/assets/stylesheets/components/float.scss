@@ -1,0 +1,23 @@
+.float {
+
+	.thumbnail {
+		margin: 0 10px 10px 0;
+		float: left;
+	}
+
+	.right{
+		float: right;
+	}
+
+	img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}

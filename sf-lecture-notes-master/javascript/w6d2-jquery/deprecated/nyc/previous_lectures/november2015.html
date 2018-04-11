@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Click A Cat!</title>
+  <style>
+
+  html, body, figure, h1, ul, li, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+
+    background: transparent;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .group:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .cat-click {
+    margin: 50px;
+    padding: 20px;
+    border: 5px solid gold;
+  }
+
+  .cat-click > h1 {
+    font-size: 100px;
+  }
+
+  .cat-click-grid {
+    margin: 20px auto;
+    border: 5px solid magenta;
+    width: 300px;
+    background: orange url("cat.jpg");
+    background-size: cover;
+
+  }
+
+  .cat-click-grid > li {
+    float: left;
+    display: block;
+    border: 5px solid magenta;
+    width: 90px;
+    height: 90px;
+    background: green;
+    cursor: crosshair;
+  }
+
+  .cat-click-grid > li.clicked {
+    background: transparent;
+  }
+
+  .cat-click-grid > li:hover {
+    background: cyan;
+  }
+
+  </style>
+</head>
+<body>
+
+  <script src="jquery.js"></script>
+  <script>
+
+  // Does NOT work,
+  // elements not yet parsed and ready.
+
+  console.log(
+      $("h1").length,
+      "how many headings?"
+  );
+
+  $("h1").css("color", "blue");
+
+
+  // This will work, as we wait for
+  // the document to be ready!
+
+  $(document).on("ready", function(e){
+
+    console.log(
+      $("h1").length,
+      "how many headings using ready callback?"
+    );
+
+    $("h1").css("color", "red");
+  });
+
+
+  // Other DOM Ready variations with jQuery:
+  //
+  // $(document).ready(function(){
+  //
+  // });
+  //
+  // $(function(){
+  //
+  // });
+
+  </script>
+
+
+  <figure class="cat-click" id="cat-click-game-1">
+    <h1>Cat Click!</h1>
+
+    <ul class="cat-click-grid group">
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <button>MORE BOXES!!!</button>
+
+  </figure>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <figure class="cat-click" id="cat-click-game-2">
+    <h1>Cat Click!</h1>
+
+    <ul class="cat-click-grid group">
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <button>MORE BOXES!!!</button>
+
+  </figure>
+
+
+  <script>
+  // /*
+  // Always wait until DOM is fully parsed
+  // and ready to go.
+  // */
+  //
+  // $(document).on("ready", function(){
+  //
+  //   /*
+  //   When we run a jQuery selector like $("li"),
+  //   we only grab matching elements that are on the
+  //   page at the time this line of code is run.
+  //   We're binding the click handler to the outer
+  //   `.cat-click-grid` element, not to individual `li`s. This
+  //   way we can add `li` elements later on, and they
+  //   would still trigger the event, firing off the
+  //   callback. This is possible because events bubble
+  //   up the DOM. jQuery is nice and allows us to select
+  //   bubbled-up events that match a certain selector.
+  //   Here we are selecting only `li` events that
+  //   bubbled-up to the `.cat-click-grid`.
+  //   */
+  //
+  //   $(".cat-click-grid").on("click", "li", function(event){
+  //
+  //     /*
+  //     The event object that gets passed in.
+  //     */
+  //     console.log("event -->", event);
+  //
+  //     /*
+  //     The single element that matches the selector
+  //     ".cat-click-grid li" on which the event was triggered.
+  //     */
+  //     console.log("event.currentTarget -->", event.currentTarget);
+  //
+  //     /*
+  //     We wrap `event.currentTarget` in $() jQuery to be
+  //     able to call jQuery methods on it. The convention
+  //     is to start a variable name with a $ to signal
+  //     that you're dealing with a jQuery wrapped DOM object.
+  //     */
+  //     var $li = $(event.currentTarget);
+  //
+  //     /*
+  //     Always prefer toggling classes instead of adding
+  //     inline styles. All styling should be pushed to
+  //     stylesheets.
+  //     */
+  //     $li.toggleClass("clicked");
+  //
+  //   });
+  //
+  //
+  //   /*
+  //   To make the game more difficult, we want to inject
+  //   `li` elements on the fly. We do this by listening
+  //   to the click event on a `button` and in its callback
+  //   append a string of `li` elements to the `.cat-click-grid`.
+  //   Since we set up our earlier listener to the `.cat-click-grid`
+  //   and not individual `li` elements, these newly injected
+  //   elements will work like any other, bubbling their
+  //   events up and which get caught by their parent.
+  //   */
+  //   $("button").on("click", function(event){
+  //
+  //     console.log("The MORE BOXES!!! button was clicked.");
+  //
+  //     var html = "<li></li><li></li><li></li>";
+  //
+  //     $(".cat-click-grid").append(html);
+  //
+  //   });
+  //
+  //
+  //   /*
+  //   To see bubbling more clearly, we bind a click
+  //   listener to the `body` element. This will catch
+  //   any click events on the `li`s, as they are
+  //   nested in the `body`.
+  //   */
+  //   $("body").on("click", function(){
+  //
+  //     console.log("In the body callback: event -->", event);
+  //
+  //     /*
+  //     The event.currentTarget will always be the
+  //     element which matches the selector on which
+  //     was bound (and possibly filtered). In our
+  //     case this is `body`.
+  //     */
+  //     console.log(
+  //       "In the body callback: event.currentTarget -->",
+  //       event.currentTarget);
+  //
+  //
+  //     /*
+  //     However, conveniently we also have access to
+  //     the actual element that triggered the event
+  //     and caused it to bubble up. This is the
+  //     `event.target`. So if you clicked on an `li`
+  //     element, this will be the `li`. See how this
+  //     is different from the `event.currentTarget`.
+  //     */
+  //     console.log(
+  //       "In the body callback: event.target --->",
+  //       event.target);
+  //   });
+  //
+  //
+  // });
+
+
+  /* REFACTORED ISOLATED VERSION */
+
+  (function(){
+
+    var CatClick = window.CatClick = window.CatClick || {};
+
+    var Game = CatClick.Game = function($el){
+      // `$el` is the root element of our game.
+
+      this.$el = $el;
+      this.attachHandlers();
+    };
+
+    Game.prototype.attachHandlers = function(){
+      // Always be binding your callbacks!
+
+      this.$el.find("button").on("click", this.addBoxesHandler.bind(this));
+
+      this.$el.find(".cat-click-grid").on("click", "li", this.toggleClickedHandler.bind(this));
+    }
+
+    Game.prototype.addBoxesHandler = function(e){
+      // `e` is the event that was triggered
+      console.log("event --> ", e);
+
+      // Assuming we bound this function correctly,
+      // `this.$el` is our game's root element.
+      console.log("root $el --> ", this.$el);
+
+      var html = "<li></li><li></li><li></li>";
+      this.$el.find("ul").append(html);
+    }
+
+    Game.prototype.toggleClickedHandler = function(e){
+      // `e` is the event that was triggered
+      console.log("event --> ", e);
+
+      var $li = $(e.currentTarget);
+      $li.toggleClass("clicked");
+    };
+
+  })();
+
+
+  $(document).on("ready", function(){
+
+    var $firstGame = $("#cat-click-game-1");
+    new CatClick.Game($firstGame);
+
+    var $secondGame = $("#cat-click-game-2");
+    new CatClick.Game($secondGame);
+
+  });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!-- Form Partial Goes Here -->
+<form class="" action="<%= action %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+  <% if tweet.persisted? %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
+  <label>body
+    <input type="text" name="tweet[body]" value="<%= tweet.body %>">
+  </label>
+  <input type="submit" value="<%= button_text %>">
+</form>

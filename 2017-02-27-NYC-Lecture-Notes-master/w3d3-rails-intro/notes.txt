@@ -1,0 +1,41 @@
+see comments in:
+- question.rb
+- questions_database.rb
+- user.rb (average karma)
+
+RAILS
+- a framework
+- ORM
+- allows users to interact with app
+
+To make a new project use:
+`rails _4.2.6_ new `project_name` --database=postgresql`
+
+important folders and files for us now:
+- app
+- db
+- Gemfile
+
+Migrations:
+- this is how we form our database
+- change structure of database (add/remove tables, columns, etc.)
+- Do not insert data
+- don't rollback, just make a new migration
+- if you've already run the migration, do not edit/delete the file!
+
+Associations:
+- foreign key references primary key in other table
+- foreign key represents 'belongs to' association
+
+
+
+###Quiz Comment###
+#
+# sf_chronicle = Newspaper.new(name: "SF Chronicle")
+# sf_chronicle.save
+#
+# aaron_the_human = Human.new(name: "aaron")
+# aaron_the_human.newspaper = sf_chronicle
+# # aaron_the_human.paper_id = sf_chronicle.id
+# aaron_the_human.save
+# # sf_chronicle.subscribers << aaron_the_human

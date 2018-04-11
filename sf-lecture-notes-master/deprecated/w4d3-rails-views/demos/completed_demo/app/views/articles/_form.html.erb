@@ -1,0 +1,21 @@
+<% action = (source == :new) ? articles_url : article_url(article) %>
+<% method = (source == :new) ? "POST" : "PATCH" %>
+<% submit_text = (source == :new) ? "Create Article!" : "Update Article!" %> 
+
+<form action=<%= action %> method="POST">
+  <%= auth_token %>
+  <input type="hidden" name="_method" value=<%= method %>>
+  <%= render 'shared/errors', object: article %>
+  <br>
+  <label for="article-title">Title</label>
+  <input type="text" 
+       name="article[title]" 
+       id="article" 
+       value="<%= article.title %>">
+  <br>
+  <br>
+  <label for="article-body">Body</label>
+  <textarea id="article-body" name="article[body]"><%= article.body %></textarea>
+  <br>
+  <input type="submit" value="<%= submit_text %>">
+</form>

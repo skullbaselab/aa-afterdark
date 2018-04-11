@@ -1,0 +1,19 @@
+<h1>Edit Post</h1>
+
+<form action="<%= post_url(@post) %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <%= auth_token_input %>
+
+  <label>
+    Title
+    <input type="text" name="post[title]" value="<%= @post.title %>">
+  </label>
+
+  <label>
+    Body
+    <textarea name="post[body]"><%= @post.body %></textarea>
+  </label>
+
+  <input type="submit" value="Update Post">
+</form>

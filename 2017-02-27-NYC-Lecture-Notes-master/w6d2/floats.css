@@ -1,0 +1,38 @@
+body {
+  background-color: #2e2b26;
+}
+
+section {
+  height: 300px;
+  width: 300px;
+}
+
+
+
+.kirk {
+  background-color: gold;
+  float: left;
+}
+
+.spock {
+  background-color: cadetblue;
+  float: right;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.shield {
+  clear: both;
+}
+
+.uss-enterprise {
+  background-color: whitesmoke;
+}
+
+.klingon {
+  background-color: firebrick;
+}

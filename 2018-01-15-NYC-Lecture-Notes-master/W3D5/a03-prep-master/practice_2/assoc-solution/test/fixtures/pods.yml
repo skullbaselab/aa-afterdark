@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: pods
+#
+#  id              :integer          not null, primary key
+#  pod_leader_id   :integer          not null
+#  name            :string           not null
+#  coolness_rating :integer
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pod_leader_id: 1
+  name: MyString
+  coolness_rating: 1
+
+two:
+  pod_leader_id: 1
+  name: MyString
+  coolness_rating: 1

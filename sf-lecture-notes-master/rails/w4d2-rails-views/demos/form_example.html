@@ -1,0 +1,58 @@
+<!-- 
+	- Remember that their is a vast amount of semantic html elements at your disposal
+	
+	- Both options display the same results with option A having some minor benefits
+
+	- Option A submit buttons allow for other values like images to be treated as buttons
+
+	- Option A labeling decreases amount of markup in forms but treats labels as containers which may not be semantic.
+
+-->
+
+<form>
+  <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+	
+  <fieldset>
+  	<legend>Login Info</legend>
+
+  	<label> <!-- Option A -->
+  	  <strong>Name: </strong>
+  	  <input type="text" name="username" required />
+  	  <strong><abbr title="required">*</abbr></strong>
+  	</label>  
+  	
+  	<section> <!-- Option B -->
+  	  <label for="username">Name: </label>
+  	  <input id="username" type="text" name="username" value="test" required />
+  	  <strong><abbr title="required">*</abbr></strong>
+  	</section>
+
+  	<label>
+  	  <strong>Password: </strong>
+  	  <input type="password" name="password" required />
+  	  <strong><abbr title="required">*</abbr></strong>
+  	</label>
+  </fieldset>
+  	
+	<p>
+	  <label for="birth"> <!-- Notice here, the 'for' attribute is redundant. -->
+	    <strong>Date of birth: </strong>
+	    <input type="text" id="birth" name="userbirth" maxlength="10" /> <em>formated as mm/dd/yyyy</em>
+	  </label>
+	</p>
+
+  <button>Yes we can write anything </button> <!-- Option A submit button -->
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+

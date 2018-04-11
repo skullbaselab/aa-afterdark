@@ -1,0 +1,42 @@
+.parent-1 {
+  /*position: relative;*/
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: teal;
+  border: 15px groove teal;
+  padding-top: 100px;
+}
+
+.parent-1 > img, .parent-2 > img {
+  width: auto;
+}
+
+.parent-2 > img {
+  height: 100px;
+}
+
+.parent-1 > img {
+  height: 600px;
+}
+
+.parent-2 {
+  /*position: relative;*/
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: purple;
+  border: 15px groove purple;
+}
+
+/*img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  width: auto;
+}*/
+
+h1 {
+  font-size: 50px;
+}

@@ -1,0 +1,56 @@
+source 'https://rubygems.org'
+
+gem 'rails', '4.2.5'
+gem 'sqlite3'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+group :development, :test do
+  # Gems of interest:
+  gem 'byebug'
+
+
+  # Rails comes with irb which is no good. Pry-rails is better!
+  gem 'pry-rails'
+
+  # Exciting one line unit testing will save many hours.
+
+  # With me you can make "factories" to generate test data with ease.
+  gem 'factory_girl_rails'
+
+  # For all your randomly generated hipster data needs.
+  gem 'faker'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~>3.1'
+  # I allow you to use Rspec in rails!
+  # Don't forget to rake db:test:prepare!
+  # Rails g rspec:install so that I auto-generate spec files!
+  gem 'rspec-rails'
+
+  # Of importance: good for save_and_open_page during test!
+  gem 'launchy'
+
+  # UNLEASH THE Capy for integrationt tests
+  gem 'capybara'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'annotate'
+  # I give you the better errors page when things go wrong.
+  gem 'better_errors'
+
+  # And I allow you to access variables from the top of the callstack
+  # in the better_errors console.
+  gem 'binding_of_caller'
+
+  # Keep app running in background for faster rake tasks and testing.
+  gem 'spring'
+end

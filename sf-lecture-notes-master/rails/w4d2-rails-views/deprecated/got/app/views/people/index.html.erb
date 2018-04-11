@@ -1,0 +1,5 @@
+<% @people.each do |person| %>
+  <!-- <a href="<%= person_url(person) %>"><%= person.name %></a> -->
+  <%= link_to person.name, person_url(person) %>
+  <img src="<%= person.picture_url %>" />
+<% end %>

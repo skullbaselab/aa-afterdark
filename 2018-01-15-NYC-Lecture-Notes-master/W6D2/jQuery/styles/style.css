@@ -1,0 +1,60 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+body {
+  width: 920px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial;
+  margin: 30px;
+}
+
+.lol {
+  background-image: url('./images/lol.jpg');
+  background-size: cover;
+  width: 450px;
+}
+
+.killa {
+  background-image: url('./images/killa.jpg');
+  background-size: cover;
+  width: 450px;
+}
+
+.deception {
+  background-image: url('./images/deception.jpg');
+  background-size: cover;
+  width: 450px;
+}

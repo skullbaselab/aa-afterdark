@@ -1,0 +1,14 @@
+h1 {
+  font-size: 500px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+}
+
+.party {
+  color: hotpink;
+  border-top: 1px solid red;
+}
+
+.party.capybara {
+  color: cornflowerblue;
+}

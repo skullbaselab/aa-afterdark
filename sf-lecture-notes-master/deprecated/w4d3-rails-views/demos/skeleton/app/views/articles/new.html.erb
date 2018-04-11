@@ -1,0 +1,24 @@
+<h1>Create a New Article</h1>
+<form action=<%= articles_url %> method="POST">
+  <input type="hidden" 
+         name="authenticity_token" 
+         value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="POST">
+  <ul>
+    <% @article.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+  <br>
+  <label for="article-title">Title</label>
+  <input type="text" 
+       name="article[title]" 
+       id="article" 
+       value="<%= @article.title %>">
+  <br>
+  <br>
+  <label for="article-body">Body</label>
+  <textarea id="article-body" name="article[body]"><%= @article.body %></textarea>
+  <br>
+  <input type="submit" value="Create Article!">
+</form>

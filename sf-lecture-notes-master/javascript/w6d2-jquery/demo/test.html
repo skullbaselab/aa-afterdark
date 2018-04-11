@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Demo</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+
+  <body>
+    <h1 id="main-title"> Demo Page </h1>
+    <ul>
+      <li>Ruby on Rails</li>
+      <li>Javascript</li>
+      <li>jQuery</li>
+      <li>React</li>
+      <li>Redux</li>
+    </ul>
+
+    <h3> Input </h3>
+    <label>
+      <input type="radio" name="duck[favorite_toy]" value="racecars">
+      Racecars
+    </label>
+
+    <label>
+      <input type="radio" name="duck[favorite_toy]" value="lasers">
+      Lasers
+    </label>
+
+    <label>
+      <input type="radio" name="duck[favorite_toy]" value="aeroplanes">
+      Aeroplanes
+    </label>
+    <br>
+
+    <h3> Alert </h3>
+    <button>Toggle Annoying Handler</button>
+    <p>Try to hover over me!</p>
+
+    <h3> Dogs </h3>
+    <ul id="dogs"></ul>
+
+    <h3> Cool Things </h3>
+    <ul id="cool-things"></ul>
+
+    <h4>New Cool Thing</h4>
+    <form id="cool-thing-form">
+      <label>
+        Cool Thing
+        <input type="text" name="cool_thing" id="cool_thing">
+      </label>
+
+      <input type="submit" value="Create Cool Thing!">
+    </form>
+  </body>
+
+
+  <style>
+    li.green {
+      background-color: green;
+    }
+  </style>
+
+
+<!-- <script>
+$("h1").siblings().attr("style", "color: blue");
+
+const $ul = $("ul");
+const $li = $("<li></li>");
+// // sets the textContent property
+$li.text("new element");
+$ul.append($li)
+</script> -->
+
+<!-- <script>
+let $listItems = $("li");
+
+// you can iterate with the each method
+$listItems.each(function (index, el) {
+console.log(el instanceof HTMLElement);
+// The function is called for each `HTMLElement` in `$listItems`;
+// each time it sets `this` to the next `HTMLElement` in the set.
+console.log([index, this.textContent].join(" "));
+});
+
+// after one second, make the list green
+window.setTimeout( () => {
+// $listItems.each( (_, obj) => {
+//   // in the low-level DOM API, `element.classList` returns a
+//   // `ClassList` object; calling `ClassList#add` adds the class to
+//   // the element.
+//   obj.classList.add("green");
+// });
+
+// more convenient; uses **implicit iteration**
+$listItems.addClass("green");
+}, 1000);
+</script> -->
+
+
+<!-- <script>
+window.setInterval( () => {
+const $coolInputs = $("input");
+
+// unselect any item.
+$coolInputs.prop("checked", false);
+
+// randomly samples a number 0...3.
+const i = Math.floor(3 * Math.random());
+
+// Indexing takes us out of jQuery world!
+const coolInput = $coolInputs[i];
+// We can **wrap** an HTMLElement to create a jQuery object with one
+// item; the wrapped element.
+const $coolInput = $(coolInput);
+$coolInput.prop("checked", true);
+}, 200);
+</script> -->
+
+
+<!-- <script>
+let enabled = false;
+
+function annoy() {
+console.log("YOU ARE CLICKING OVER ME!");
+}
+
+$("button").on("click", () => {
+  if (!enabled) {
+  console.log("Click event on");
+  $("p").on("mouseover", annoy);
+  enabled = true;
+  } else {
+  // remove listener
+  console.log("Click event off");
+  $("p").off("mouseover", annoy);
+  enabled = false;
+  }
+});
+</script> -->
+
+
+<!-- <script>
+let $listItems = $("li");
+$listItems.on("mouseover", (event) => {
+  // console.log(event);
+const currentTarget = event.currentTarget;
+// console.log(currentTarget.innerHTML);
+const $currentTarget = $(currentTarget);
+console.log($currentTarget.text());
+})
+</script> -->
+
+
+<!-- <script>
+const DOGS = {
+101: {
+id: 101,
+name: "Sable",
+genus: "Husky Huskius"
+},
+
+234: {
+id: 234,
+name: "Blixa",
+genus: "Corgi Corgiorum"
+}
+};
+
+// Fill $dogsUl with list items; one per dog.
+const $dogsUl = $("ul#dogs");
+Object.keys(DOGS).forEach( id => {
+const dog = DOGS[id];
+
+const $dogLi = $("<li class='dog'></li>");
+$dogLi.text(dog.name + " -- " + dog.genus);
+
+// store the dog's id in a **data-* attribute**
+$dogLi.data("id", dog.id); // DOESN'T SHOW IN THE HTML
+
+$dogsUl.append($dogLi);
+});
+
+// Install click handlers on the li.dog elements.
+$("li.dog").on("click", event => {
+const $dogLi = $(event.currentTarget);
+
+// pull dog id out of the DOM to identify the dog.
+const dogId = $dogLi.data("id");
+const dog = DOGS[dogId];
+
+alert(dog.name + " loves you!");
+});
+</script> -->
+
+<!-- <script>
+const $form = $("#cool-thing-form");
+$form.on("submit", event => {
+event.preventDefault();
+
+const $input = $("#cool_thing");
+const coolThing = $input.val();
+$input.val("");
+
+const $li = $("<li></li>").text(coolThing);
+$("ul#cool-things").append($li);
+});
+
+$("ul#cool-things").on("mouseover", event => {
+  // currentTarget is the thing the event handler is installed on.
+  const $ul = $(event.currentTarget);
+
+  // target is the thing that the event happened to. This line sees
+  // if the thing we mousedover is an `li` in the `$ul`.
+  if ($ul.find("li").is(event.target)) {
+    alert($(event.target).text());
+  };
+});
+</script> -->
+
+</html>

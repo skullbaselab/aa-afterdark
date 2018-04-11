@@ -1,0 +1,37 @@
+section {
+  width: 900px;
+  background: wheat;
+
+}
+
+.group:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.appnames.group.facetime {
+  border: 5px solid black;
+}
+
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: pink;
+}
+
+div {
+  color: white;
+}
+
+.float {
+  float: left;
+}
+
+.invader {
+  height: 500px;
+  background: limegreen;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Number Facts</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <form class="math-problem" id="math-form">
+      <div class="instructions">
+        Solve the problem correctly to earn a number fact!
+      </div>
+      <span id="first-num"></span>
+      <span id="operation"></span>
+      <span id="second-num"></span>
+      <span>=</span>
+      <input type="text" name="answer" />
+      <input type="submit" name="submit-answer" />
+    </form>
+    <div class="feedback">
+      <div class="correct-answer" id="correct-answer">
+        Nice work! Here's a number fact:
+        <div class="number-fact" id="number-fact"></div>
+      </div>
+      <div class="wrong-answer" id="wrong-answer">
+        Wrong Answer. Try Again!
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/*
+
+- Universal Selectors
+- Type / Tag Selectors
+- Class Selectors
+- Id Selectors
+- Inline Styles
+
+- span-id is very specific and overides class selector
+- span-class selector overrides span tag selector
+- child tag selector overrides parent selectors .content & section
+- Nothing is pink because universal selector is most general
+
+*/
+
+.specificity {
+
+	* {
+		color: $pink;
+	}
+
+	section {
+		color: $light-blue;
+	}
+
+	.test {
+		color: $green;
+	}
+
+	span {
+		color: $orange;
+		// color: $orange !important;
+	}
+
+	.span-class {
+		color: $black;
+	}
+
+	#span-id {
+		color: $blue;
+	}
+
+	#section-id span {
+		color: $purple;
+	}
+
+	.red1 {
+		color:red;
+	}	
+
+	.blue1 {
+		color: blue;
+	}
+
+}

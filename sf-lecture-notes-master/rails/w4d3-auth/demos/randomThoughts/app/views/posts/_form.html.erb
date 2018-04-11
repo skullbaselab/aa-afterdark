@@ -1,0 +1,31 @@
+<% _action = post.id ? post_url(post) : posts_url %>
+<% _verb = post.id ? "PATCH" : "POST" %>
+
+<form action="<%= _action %>" method="post">
+	<!-- Question: How do we tell Rails to make a PATCH or DELETE request using an HTML Form -->
+  <!-- Answer: Use a hidden input field with name="_method" and value="PATCH" -->
+  <input type="hidden" name="_method" value="<%= _verb %>">
+  <input type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <%= render "shared/errors" %>
+
+      <label>
+        <strong>Title:</strong>
+        <input id="title" type="text" name="post[title]" value="<%= post.title %>">
+      </label>
+
+      <label>Body
+        <textarea name="post[body]">
+        	<%= post.body %>
+        </textarea>
+      </label>
+
+      <label>Publish date
+        <input type="date" name="post[publish_date]" value="<%= post.publish_date || Time.now.to_date %>" />
+      </label>
+
+      <input type="submit">Submit</input>
+    </form>
+</section>

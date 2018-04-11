@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fibs</title>
+    <style media="screen">
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+        font-size: 12px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      section {
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        display: none;
+      }
+
+      section.active {
+        display: block;
+      }
+
+      div {
+        opacity: 0.2;
+        transition: all 1s;
+      }
+
+      div.show {
+        display: block;
+        opacity: 1;
+      }
+
+      span {
+        background-color: rgba(0, 255, 0, 0.2);
+      }
+
+      .highlighted {
+        background-color: rgba(0, 0, 0, 0.13);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Recursive Fibonacci</h1>
+    <section id="one" class="active">
+      <div class="one">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 4<span></pre></p>
+        <p><pre>  return [0, 1].take(n) if n <= 2</pre></p>
+        <p><pre>  prev_fibs = fibs(n - 1)</pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="two">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 4<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#false<span></pre></p>
+        <p><pre>  prev_fibs = fibs(n - 1)</pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="three">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 4<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#false<span></pre></p>
+        <p><pre class="highlighted">  prev_fibs = fibs(n - 1) <span>#next call to #fibs<span></pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="four">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 4<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#false<span></pre></p>
+        <p><pre class="highlighted">  prev_fibs = fibs(n - 1) <span>#next call to #fibs<span></pre></p>
+        <p><pre class="highlighted">  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]] <span>#finally!<span></pre></p>
+        <p><pre>end</pre></p>
+      </div>
+    </section>
+
+    <section id="two">
+      <div class="one">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 3<span></pre></p>
+        <p><pre>  return [0, 1].take(n) if n <= 2</pre></p>
+        <p><pre>  prev_fibs = fibs(n - 1)</pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="two">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 3<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#false<span></pre></p>
+        <p><pre>  prev_fibs = fibs(n - 1)</pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="three">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 3<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#false<span></pre></p>
+        <p><pre class="highlighted">  prev_fibs = fibs(n - 1) <span>#next call to #fibs<span></pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="four">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 3<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#false<span></pre></p>
+        <p><pre class="highlighted">  prev_fibs = fibs(n - 1) <span>#next call to #fibs<span></pre></p>
+        <p><pre class="highlighted">  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]] <span>#continue...<span></pre></p>
+        <p><pre>end</pre></p>
+      </div>
+    </section>
+
+    <section id="three">
+      <div class="one">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 2<span></pre></p>
+        <p><pre>  return [0, 1].take(n) if n <= 2</pre></p>
+        <p><pre>  prev_fibs = fibs(n - 1)</pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+
+      <div class="two">
+        <p><pre class="highlighted">def fibs(n) <span>#n == 2<span></pre></p>
+        <p><pre class="highlighted">  return [0, 1].take(n) if n <= 2 <span>#return [0, 1]<span></pre></p>
+        <p><pre>  prev_fibs = fibs(n - 1)</pre></p>
+        <p><pre>  return prev_fibs+ [prev_fibs[-2] + prev_fibs[-1]]</pre></p>
+        <p><pre>end</pre></p>
+      </div>
+    </section>
+
+
+    <script type="text/javascript">
+      let i = 0;
+
+      const eachSelector = (selector, cb) => {
+        Array.from(document.querySelectorAll(selector)).forEach(cb);
+      }
+      $ = (selector) => document.querySelector(selector);
+
+      const reset = () => {
+        eachSelector('section', (node) => node.classList.remove("active"));
+        eachSelector('div', (node) => node.classList.remove("show"));
+        $("#one").classList.add("active")
+        $("#one .one").classList.add("show")
+      }
+
+      const highlight = (section, number) => {
+        $(`#${section}`).classList.add("active")
+        eachSelector(`#${section} div`, (node) => node.classList.remove("show"));
+        $(`#${section} .${number}`).classList.add("show")
+      }
+
+      const funcs = [
+        () => highlight("one", "two"),
+        () => highlight("one", "three"),
+        () => highlight("two", "one"),
+        () => highlight("two", "two"),
+        () => highlight("two", "three"),
+        () => highlight("three", "one"),
+        () => highlight("three", "two"),
+        () => highlight("two", "four"),
+        () => highlight("one", "four"),
+        () => { reset(); i = -1; }
+      ]
+
+      reset();
+      document.addEventListener("click", () => {
+        funcs[i]();
+        i++;
+      });
+
+    </script>
+  </body>
+</html>

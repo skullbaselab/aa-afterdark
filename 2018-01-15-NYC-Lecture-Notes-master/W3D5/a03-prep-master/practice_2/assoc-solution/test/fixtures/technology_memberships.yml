@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: technology_memberships
+#
+#  id               :integer          not null, primary key
+#  technology_id    :integer          not null
+#  final_project_id :integer          not null
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  technology_id: 1
+  final_project_id: 1
+
+two:
+  technology_id: 1
+  final_project_id: 1

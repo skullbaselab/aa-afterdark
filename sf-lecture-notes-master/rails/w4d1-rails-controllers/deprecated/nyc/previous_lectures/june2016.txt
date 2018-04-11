@@ -1,0 +1,95 @@
+NOTES ON ROUTES AND CONTROLLERS
+
+
+LET'S TALK ABOUT HTTP...
+
+
+HTTP:
+-hyper text transfer protocol
+-make a request, get a response
+-you always get a response, even if it's status 500 server error
+  (HTTP status code equivalent of "uhhh..")
+-stateless! each cycle happens in isolation. cannot persist state.
+HTTP VERBS:
+-GET
+  -we want to just get information from a host
+  -there can be no body to our request;
+    -params (eg search params) go through as query string in the url
+  -any time you type a url into nav bar and hit 'go', that's a GET request by default.
+-POST
+  -we have info we want to submit to the host server
+  -form data goes in request body
+-PUT/PATCH
+  -we want to update existing info on host server
+  -form data goes in request body
+-DELETE
+  -we want to destroy a resource on the server side
+
+REQUEST:
+-header
+  -HTTP verb
+  -path (includes query string)
+-body
+  -form data (for POST/ PUT/ PATCH requests)
+
+
+NB: to see these requests + responses in action:
+  -open up the Chrome Developer tools (command + option + i)
+  -click on 'network' tab
+  -click on 'all' in small nav bar
+  -navigate to a new url and see the request fire off!
+  -check out status code, headers, path, method, etc.
+
+
+
+
+
+RESTful DESIGN, CRUD, AND FIRST ROUTES...
+
+
+REST:
+-representational state transfer
+-the guidelines that govern how HTTP operates
+-RESTful actions are those that create, read, update, and destroy resources.
+-REST is the architecture, HTTP is something that plays by those rules
+
+
+CRUD:
+-create, read, update, destroy
+
+What is a resource? Very general term representing info stored in your db.
+-each of your Rails models represents a resource. For today's example,
+Users are a resource; Tweets are a resource; Countries are a resource.
+
+example: RESTful interactions with cats.
+
+i want ALL THE CATS! what do i do?
+GET request to "/cats"
+
+no, i want one particular cat! what do i do?
+GET request to "/cats/2" (where 2 is cat's id)
+
+now i want to make a cat! what do i do?
+POST request to "/cats"
+
+now i'm altering my beloved cat. what do i do?
+PATCH request to "/cats/2"
+
+i'm done with this cat! ...too sad an example but you get the picture.
+
+
+
+
+Notes:
+-use better_errors and binding_of_caller!
+  But make sure they're in group :development
+  drop a 'fail' into controller methods (works like debugger)
+-follow naming conventions!
+  controllers:
+    snake_case and plural file names. users_controller.rb
+    CamelCase plural class name. class UsersController
+-use Postman to do all non-GET requests for today (we'll do
+    those thru browser tomorrow)
+
+
+//

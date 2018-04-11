@@ -1,0 +1,22 @@
+W3D3 NOTES
+
+create database - rake db:create
+create tables - rails generate migration CreateTableName
+run migration - rake db:migrate
+NEVER ROLLBACK! Instead, create a new Migration!
+
+NEVER CHANGE MIGRATIONS, after you have run them!
+    Instead drop_table/create_table or rename_table
+
+Postgres console for your db - rails db
+Model files - singular, snake_case version of table name
+Model name is the camel case version of model file name
+instance.save! will throw an error, "save" will not.
+Model.create = .new + .save
+rails console = rails c
+
+belongs_to association is when my class is the home
+  of the foreign_key
+
+has_many or has_one association is when the other
+  class is home of the foreign_key

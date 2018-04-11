@@ -1,0 +1,36 @@
+span {
+    display: block;
+}
+.title {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.body {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.likes {
+  font-size: 16px;
+}
+
+.like-button {
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 20px;
+  border: 1px solid green;
+  border-radius: 3px;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}

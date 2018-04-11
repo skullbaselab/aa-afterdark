@@ -1,0 +1,33 @@
+<% if user.errors %>
+  <ul>
+    <% user.errors.full_messages.each do |message| %>
+      <li>
+        <%= message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% if user.persisted? %>
+  <% action_url = user_url(user.id) %>
+  <% button_text = "Update User" %>
+<% else %>
+  <% action_url = users_url %>
+  <% button_text = "Create User" %>
+<% end %>
+
+<form action="<%= action_url %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <% if user.persisted? %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+
+  <label for="user_name">Name</label>
+  <input id="user_name" type="text" name="user[name]" value="<%= user.name %>">
+
+  <label>Country Id
+    <input type="text" name="user[country_id]" value="<%= user.country_id %>">
+  </label>
+
+  <input type="submit" value="<%= button_text %>">
+</form>

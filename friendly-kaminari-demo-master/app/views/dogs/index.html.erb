@@ -1,0 +1,5 @@
+<%= paginate @dogs %>
+
+<% @dogs.each do |dog| %>
+    <h1><%=dog.name%></h1>
+<% end %>

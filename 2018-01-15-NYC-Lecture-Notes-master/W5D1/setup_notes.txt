@@ -1,0 +1,19 @@
+rspec-rails
+  - gem 'rspec-rails'
+  - bundle
+  - be rails generate rspec:install
+  - --color && --format documentation in .rspec
+shoulda-matchers
+  - gem 'shoulda-matchers'
+  - bundle
+  - add block found in docs to rails_helper
+factory-bot
+  - gem 'factory_bot_rails'
+  - `config.include FactoryBot::Syntax::Methods`
+    in rails_helper config block
+rails-controller-testing
+  - gem rails-controller-testing
+  - bundle
+capybara
+  - gem 'capybara'
+  - bundle

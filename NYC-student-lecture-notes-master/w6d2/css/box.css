@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.group:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.wrapper {
+  background: pink;
+}
+
+.first {
+  width: 400px;
+  height: 400px;
+  background: blue;
+  color: white;
+  float: left;
+}
+
+.second {
+  width: 400px;
+  height: 400px;
+  background: red;
+  box-sizing: border-box;
+  float: right;
+}
+
+.intruder {
+  width: 400px;
+  height: 400px;
+  background: green;
+
+}
+
+/*.savior {
+  background: lightblue;
+  clear: both;
+}*/

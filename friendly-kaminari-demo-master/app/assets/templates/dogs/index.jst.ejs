@@ -1,0 +1,6 @@
+<h1>Infintely(ish) Scrolling Dogs!</h1>
+<% dogs.each(function(dog) { %>
+  <div class="dog-div">
+    <h3><%= dog.escape("name") %></h3>
+  </div>
+<% }) %>

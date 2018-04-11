@@ -1,0 +1,10 @@
+<section class="review">
+	<p>
+		<%= review.body %>
+	</p>
+	<small>
+		<%= review.user.username %>
+	</small>
+	<small><%= link_to "Edit", edit_recipe_review_url(params[:id], review)  %></small>
+	<small><%= button_to "Delete", review_url(review), method: :delete  %></small>
+</section>

@@ -1,0 +1,16 @@
+<tr>
+  <td><%= req.start_date %></td>
+  <td><%= req.end_date %></td>
+  <td>
+    <% if req.pending? %>
+        <%= button_to "Approve", approve_cat_rental_request_url(req) %>
+        <%= button_to "Deny", deny_cat_rental_request_url(req) %>
+        <!-- this is just an HTML form under the hood -->
+        <!-- button_to is unique to Rails -->
+        <!-- you're gonna write a lot of HTML forms soon in JS -->
+        <!-- in short, write out the form -->
+    <% else %>
+      <%= req.status %>
+    <% end %>
+  </td>
+</tr>

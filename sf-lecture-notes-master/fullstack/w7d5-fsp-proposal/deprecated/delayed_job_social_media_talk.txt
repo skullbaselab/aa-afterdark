@@ -1,0 +1,59 @@
+=====Three Topics=====
+
+ * Delayed Job
+ * Heroku Scheduler and Rake Tasks
+ * Social Media SDKs
+ 
+ =====Delayed Job=====
+
+  * Standard way to deal with sending emails, or doing any heavy I/O operations
+  * Also a way to schedule tasks for future
+  * You want the one by collectiveidea
+  * Set it up in three steps!
+    - gem 'delayed_job_active_record'
+    - rails generate delayed_job:active_record
+    rake db:migrate
+    - @user.delay.do_long_task
+    !!!
+    rake jobs:work
+    !!!
+    
+          UserMailer.delay.welcome_email(@user)
+          
+          reminder_email.send_at(2.minutes.from_now, :deliver!)
+
+          handle_asynchronously :time_consuming_task    
+    
+  * Other things you can do:
+  handle_asynchronously to have that job always handled asynchronously
+  handle_asynchronously :in_the_future, :run_at => Proc.new { 5.minutes.from_now }
+  handle_asynchronously :call_an_instance_method, :priority => Proc.new {|i| i.how_important }
+  @user.send_later(:deliver)
+  You can also write a class with a "perform" method, and then you can pass this into a queue as a job.
+  Named Queues:
+  object.delay(:queue => 'tracking').method
+  Delayed::Job.enqueue job, :queue => 'tracking'
+  handle_asynchronously :tweet_later, :queue => 'tweets'
+  
+=====Heroku Scheduler=====
+
+ * Talk about it
+  - Running delayed job on Heroku takes dyno hours
+  - You can save hours (and $) by only running the tasks at certain intervals.
+  Heroku scheduler can be used for this.
+  - Heroku scheduler is an add-on for Heroku.  Add-ons are plugins, often by a 3rd party.
+  - It's free, but also unreliable.  Clock processes are another option;
+  more detail than that is beyond the scope of this discussion, but you should know 
+  what these options are in case you need them.
+
+ 
+=====Social Media SDKs=====
+
+ * For you right now, Social Media SDKs are the icing on the cake: recruiters and employers likely won't give you Facebook permissions etc., or use your "tweet this" button.
+ That said, using many API/SDKs looks good to employers, just maybe don't focus on it.
+ Still a cool thing to know about.
+ * Tools to integrate social media features in your app
+ * Share, Like, Tweet buttons (have the windows open to copy paste)
+ * Facebook Graph API
+ * Facebook Query Language
+ * There is much more; this is like a free sample!

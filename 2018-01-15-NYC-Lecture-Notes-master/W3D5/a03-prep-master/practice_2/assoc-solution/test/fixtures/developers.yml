@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: developers
+#
+#  id                :integer          not null, primary key
+#  student_pod_id    :integer
+#  student_circle_id :integer
+#  name              :string           not null
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_pod_id: 1
+  name: MyString
+
+two:
+  student_pod_id: 1
+  name: MyString

@@ -1,0 +1,14 @@
+COMPONENT HIERARCHY
+
+App
+  Header
+  TweetIndex
+    TweetIndexItem(s)
+  ListIndex
+    ListIndexItem(s)
+  UserShow
+    TweetIndexItem(s)
+    TweetShow
+    ListIndexItem(s)
+  ListShow
+  

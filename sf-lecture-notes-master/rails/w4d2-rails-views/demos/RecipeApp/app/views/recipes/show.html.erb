@@ -1,0 +1,49 @@
+<aside>
+  <h2>Ingredients</h2>
+  <ul>
+    <% @ingredients.each do |ingredient| %>
+      <li><%= ingredient %></li>
+    <% end %>
+  </ul>
+</aside>
+
+<section>
+  <h1><%= @recipe.name %></h1>
+
+  <figure>
+    <img src="<%= @recipe.image_url %>"
+         alt="<%= @recipe.name + ' Recipe' %>">
+  </figure>
+
+
+  <h2>Description</h2>
+  <a name="Description"></a>
+  <p>
+     <%= @recipe.description %>
+  </p>
+
+  <h2>Directions</h2>
+  <a name="Directions"></a>
+  <ol>
+    <% @directions.each do |direction| %>
+      <li><%= direction %></li>
+    <% end %>
+  </ol>
+
+  <h2>Reviews</h2>
+  <a name="Reviews"></a>
+  <%= render "shared/errors" %>
+
+  <!-- We use a partial to avoid having to write the same form twice for updating or creating a review -->
+  <%= render "shared/review_form", review: nil %>
+  
+  <!-- Rails knows to look for "views/reviews/_review" -->
+  <%= render @reviews %>
+</section>
+
+
+
+
+
+
+

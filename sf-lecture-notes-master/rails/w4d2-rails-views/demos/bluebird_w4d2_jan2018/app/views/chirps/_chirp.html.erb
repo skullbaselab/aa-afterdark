@@ -1,0 +1,9 @@
+<ul>
+  <li><%= chirp.body %></li>
+  <li><%= chirp.author.username %></li>
+  <% if action == :show %>
+    <li><%= link_to "Chirp Index", chirps_url %></li>
+  <% else %>
+    <li><%= link_to "Chirp's Show Page", chirp_url(chirp) %></li>
+  <% end %>
+</ul>

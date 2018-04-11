@@ -1,0 +1,35 @@
+.parent {
+  position: relative;
+  /* left: -100px; */
+  width: 500px;
+  height: 500px;
+  /* margin's first arg is top and bottom.  The second is left and right */
+  margin: 0 auto;
+  background-color: yellow;
+  border: 5px solid black;
+}
+
+.ron {
+  height: 200px;
+  width: auto;
+}
+
+/* .ron {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.sweetums {
+  height: 175px;
+  /* the auto in width proportions the the widht with the height */
+  width: auto;
+}
+
+.ron, .sweetums {
+  position: absolute;
+}
+
+.leslie {
+  height: 200px;
+}

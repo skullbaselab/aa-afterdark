@@ -1,0 +1,58 @@
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px silver;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+form, input[type="submit"] {
+    padding-top: 10px;
+    background-color: white;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+    width: 200px;
+    margin-bottom: 5px;
+  height: 30px;
+}
+
+.tweet {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.tweet > button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.tweet > button:hover {
+  color: red;
+  background-color: white;
+}
+
+.tweet-index {
+  border-top: 3px groove black;
+}

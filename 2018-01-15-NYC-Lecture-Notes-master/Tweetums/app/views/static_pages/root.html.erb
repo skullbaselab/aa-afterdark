@@ -1,0 +1,16 @@
+<!-- #current_user and #logged_in are helper methods from ApplicationController -->
+<!--  if logged_in, put current_user on the window for our frontend -->
+<% if logged_in? %>
+  <script>
+   window.currentUser = {
+     id: <%= current_user.id %>,
+     username: "<%= current_user.username %>"
+   }
+  </script>
+<% end %>
+
+<script>
+ window.blue = "<%= asset_path('blue.jpg')%>"
+</script>
+
+<main id="root"></main>

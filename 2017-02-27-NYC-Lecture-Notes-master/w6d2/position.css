@@ -1,0 +1,32 @@
+.outer {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: blue;
+}
+
+/*.outer-2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: green;
+}*/
+
+.inner-1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  background-color: red;
+}
+
+.inner-2 {
+  position: relative;
+  width: 85%;
+  height: 200px;
+  background-color: yellow;
+}
+
+.outer > span {
+  color: green;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Big O</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <style>
+      .remark-slide-content {
+        padding: 0;
+      }
+
+      .fill-screen {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding-top: 180px;
+        background-color: #c00a0a;
+      }
+
+      .fill-screen > * {
+        max-width: 100%;
+        text-align: center;
+        color: #fff;
+      }
+
+      .remark-code {
+        font-size: 15px;
+        margin: 50px;
+      }
+
+      .pad-body {
+        margin: 50px;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        color: #444;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 20px;
+        background-color: #c00a0a;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+      }
+
+      li {
+        text-align: left;
+        font-size: 28px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+      .fill-screen[
+      # Big O
+
+      Evaluating time and space complexity
+      ]
+
+      ---
+
+      # Motivation
+
+      .pad-body[
+      - Why do we care?
+      - Best case, average case, or worst case?
+      ]
+
+      ---
+
+      # Determining the Dominant Term
+
+      .pad-body[
+      - `n^2 + 1`
+      - `n * n^3`
+      - `n + log(n)`
+      - `n! / ((n - 2)! * 2!)`
+      ]
+
+      ---
+
+      .fill-screen[
+      # The Cat Psychologist
+
+      ![cat-psycho](./cat.gif)
+      ]
+
+      ---
+
+      .fill-screen[
+      # Real-World Time Complexities
+      ]
+
+      ---
+
+      # Binary Search
+
+      ```ruby
+      class Array
+        def binary_search(target)
+          middle_idx = self.length / 2
+
+          case self[middle_idx] <=> target
+          when 0
+            middle_idx
+          when 1
+            self.take(middle_idx).binary_search(target)
+          when -1
+            right_idx = self.drop(middle_idx + 1).binary_search(target)
+            right_idx.nil? ? nil : right_idx + middle_idx + 1
+          end
+        end
+      end
+      ```
+
+      ---
+
+      # Merge Sort
+
+      ```ruby
+      class Array
+        def self.merge(left, right, &prc)
+          merged = []
+
+          until left.empty? || right.empty?
+            if prc.call(left.first, right.first) == 1
+              merged << right.shift
+            else
+              merged << left.shift
+            end
+          end
+
+          merged + left + right
+        end
+
+        def merge_sort(&prc)
+          return self if self.length <= 1
+
+          middle_idx = self.length / 2
+          left = self.take(middle_idx)
+          right = self.drop(middle_idx)
+
+          self.class.merge(
+              left.merge_sort(&prc),
+              right.merge_sort(&prc),
+              &prc
+          )
+        end
+      end
+      ```
+
+      ---
+
+      # Naive Nth Fibonacci
+
+      ```ruby
+      def fib(n)
+        return n if n <= 1
+        return fib(n - 1) + fib(n - 2)
+      end
+      ```
+
+      ---
+
+      .fill-screen[
+      # Traveling Salesman Problem
+
+      ![traveling salesman comic](./traveling_salesman_problem.png)
+      ]
+
+      ---
+
+      .fill-screen[
+      # Space Complexity
+
+      ![space complexity](./space.gif)
+      ]
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+

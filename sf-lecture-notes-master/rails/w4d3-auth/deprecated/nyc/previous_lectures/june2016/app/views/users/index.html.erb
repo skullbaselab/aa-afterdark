@@ -1,0 +1,20 @@
+<h1>All the users!</h1>
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <a href="<%= user_url(user.id) %>"><%= user.name %></a>
+      is from
+      <%= user.country.name %>
+
+      <form action="<%= user_url(user.id) %>" method="POST">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="_method" value="DELETE">
+
+        <input type="submit" value="Delete this user">
+      </form>
+    </li>
+  <% end %>
+</ul>
+
+<a href="<%= new_user_url %>">Make a new user!</a>

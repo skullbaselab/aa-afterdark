@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if signed_in? %>
+  <%= current_user.username %>
+  <%= button_to "Sign Out", session_url, :method => :delete %>
+
+  <!-- Below is the same as using button_to -->
+  <!-- <form action="<%#= session_url %>" method="post">
+    <%#= auth_token_input %>
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" name="" value="Sign Out">
+  </form> -->
+
+<% else %>
+  <%= link_to "Sign In", new_session_url %>
+  <!--  same as using link_to -->
+  <!-- <a href="<%#= new_session_url %>">Sign In</a> -->
+  <%= link_to "Sign Up", new_user_url %>
+<% end %>
+
+<br>
+
+<%= render "layouts/errors" %>
+
+<%= yield %>
+
+</body>
+</html>

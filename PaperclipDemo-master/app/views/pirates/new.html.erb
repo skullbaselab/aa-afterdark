@@ -1,0 +1,5 @@
+<form action="/pirates" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token  %>" id="form_authenticity_token">
+    <input type="file" name="pirate[beard_photo]">
+    <p><input type="submit" value="Arrr"></p>
+</form>

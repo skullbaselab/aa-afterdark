@@ -1,0 +1,11 @@
+<h1>All Posts</h1>
+
+<%= link_to "New post", new_post_url %>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= render 'post', post: post %>
+    </li>
+  <% end %>
+</ul>

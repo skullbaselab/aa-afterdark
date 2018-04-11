@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React!</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Oswald';
+        color: #444;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        background-color: #ff3850;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+      }
+      li {
+        text-align: left;
+        font-size: 28px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+      # jQuery Lite Solutions
+        - Different uses of the $l function
+        - Vanilla JS is verbose!
+
+      ---
+      # What is React?
+        - 'A JavaScript library for building user interfaces' - according to their website
+        - Simplifies and speeds up the way that we manipulate the DOM
+        - Provides a reactive interface that updates when the data it represents changes
+          - This data is collectively referred to as the state of the application
+        - Best used with JSX, which is syntactic sugar that compiles into calls to React.createElement() and closely resembles regular HTML
+
+      ---
+      # React vs jQuery
+      ![alt text][reactvsjquery]
+      [reactvsjquery]: http://mateoclarke.com/public/images/jquery-style-vs-react-style.png "React vs jQuery"
+
+      ---
+      # React vs jQuery
+        - Event Handlers
+          - In jQuery, event handlers manipulate the DOM
+          - In React, event handlers manipulate the state, and \#render() reflects the current state
+        - Real vs Virtual DOM
+          - jQuery directly traverses and manipulates the DOM, which can be slow
+          - React works on a virtual DOM - a stripped-down representation of the actual DOM - and uses a diffing algorithm to smartly re-render only the components that have changed
+
+      ---
+      # React Usage - A Summary
+        - \#render() is triggered whenever component state or props change
+        - Props are passed from parents to children
+        - State is changed by calling #setState. Do NOT modify component state by reassigning it.
+          ```js
+            componentWillReceiveProps(newProps) {
+                this.setState({ a: newProps[a] }); //=> totally fine
+            }
+            componentWillReceiveProps(newProps) {
+                this.state = { a: newProps[a] }; //=> NOT GOOD VERY BAD
+            }
+          ```
+        - Component lifecycle methods allow us to perform a variety of other functions that may trigger state or props changes
+
+      ---
+      # Quiz and Study Hall
+        - Time for questions!
+    </textarea>
+
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      remark.create();
+    </script>
+  </body>
+</html>

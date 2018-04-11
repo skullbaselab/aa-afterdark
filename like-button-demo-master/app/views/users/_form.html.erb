@@ -1,0 +1,36 @@
+<%= render "shared/errors" %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= form_text %></h1>
+      <form action="<%= form_url %>" method="POST">
+        <input type="hidden"
+              name="authenticity_token"
+              value="<%= form_authenticity_token %>">
+
+        <div class="form-group">
+          <label for="user_username">Username</label>
+          <input type="text"
+                 class="form-control"
+                 id="user_username"
+                 name="user[username]"
+                 value="<%= user.username %>">
+        </div>
+
+        <div class="form-group">
+          <label for="user_password">Password</label>
+          <input type="password"
+                 class="form-control"
+                 id="user_password"
+                 name="user[password]">
+        </div>
+
+        <div class="form-group">
+          <input type="submit"
+                 class="btn btn-primary form-control">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

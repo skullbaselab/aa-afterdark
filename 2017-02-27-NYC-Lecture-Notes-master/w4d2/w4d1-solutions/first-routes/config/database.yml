@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  database: contacts_api
+  pool: 5
+  timeout: 5000

@@ -1,0 +1,10 @@
+<h1> <%= @user.name %></h1>
+
+from the great land of:
+<h3> <%= @user.country.name %> </h3>
+
+<ul>
+  <% @user.tweets.each do |tweet| %>
+    <li> <%= tweet.body %></li>
+  <% end %>
+</ul>

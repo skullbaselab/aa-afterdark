@@ -1,0 +1,13 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.body %></p>
+
+<h3>Comments (<%= @article.comments.size %>)</h3>
+<%= render @article.comments %>
+<%= render partial: 'comments/form', locals: { article: @article } %>
+
+<%= link_to "<< Back to Articles List", articles_url %>
+<%= link_to "Edit Article", edit_article_url(@article) %>
+<%= link_to "Delete Article", 
+            article_url(@article), 
+            method: :delete, 
+            data: {confirm: "Really delete the article?"} %>

@@ -1,0 +1,10 @@
+json.(
+  comment,
+  :id,
+  :content,
+  :created_at,
+  :image_url,
+  :order_num,
+  :todo_id,
+  :updated_at
+)

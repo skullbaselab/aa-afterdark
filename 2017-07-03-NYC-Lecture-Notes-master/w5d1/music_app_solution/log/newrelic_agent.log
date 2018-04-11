@@ -1,0 +1,163 @@
+# Logfile created on 2017-03-22 06:51:23 -0400 by logger.rb/54362
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-22 06:51:23 -0400 hilbert (43809)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-22 06:51:23 -0400 hilbert (43809)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Environment: development
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Dispatcher: webrick
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Application: development
+[2017-03-22 06:51:23 -0400 hilbert (43809)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing ActiveJob instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing Net instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Installing Rails 4 view instrumentation
+[2017-03-22 06:51:23 -0400 hilbert (43809)] INFO : Finished instrumentation
+[2017-03-22 06:51:24 -0400 hilbert (43809)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-22 06:51:55 -0400 hilbert (43980)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-22 06:51:55 -0400 hilbert (43980)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Environment: development
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Dispatcher: webrick
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Application: development
+[2017-03-22 06:51:55 -0400 hilbert (43980)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing ActiveJob instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing Net instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Installing Rails 4 view instrumentation
+[2017-03-22 06:51:55 -0400 hilbert (43980)] INFO : Finished instrumentation
+[2017-03-22 06:51:56 -0400 hilbert (43980)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-22 06:51:58 -0400 hilbert (43980)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-03-22 06:51:58 -0400 hilbert (43980)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-03-22 06:52:03 -0400 hilbert (43980)] INFO : Starting Agent shutdown
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-22 06:52:18 -0400 hilbert (44158)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-22 06:52:18 -0400 hilbert (44158)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Environment: development
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Dispatcher: webrick
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Application: development
+[2017-03-22 06:52:18 -0400 hilbert (44158)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing ActiveJob instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing Net instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Installing Rails 4 view instrumentation
+[2017-03-22 06:52:18 -0400 hilbert (44158)] INFO : Finished instrumentation
+[2017-03-22 06:52:19 -0400 hilbert (44158)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-22 06:52:24 -0400 hilbert (44158)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-03-22 06:52:24 -0400 hilbert (44158)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-03-22 06:52:57 -0400 hilbert (44158)] INFO : Starting Agent shutdown
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Environment: development
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Dispatcher: webrick
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Application: development
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing ActiveJob instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing Net instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Installing Rails 4 view instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Finished instrumentation
+[2017-03-27 13:16:03 -0400 hilbert.local (80188)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Environment: development
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Dispatcher: webrick
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Application: development
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing ActiveJob instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing Net instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Installing Rails 4 view instrumentation
+[2017-03-27 13:16:37 -0400 hilbert.local (80358)] INFO : Finished instrumentation
+[2017-03-27 13:16:38 -0400 hilbert.local (80358)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-27 13:30:47 -0400 hilbert.local (80358)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-03-27 13:30:47 -0400 hilbert.local (80358)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-03-27 14:03:36 -0400 hilbert.local (80358)] INFO : Starting Agent shutdown
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Environment: development
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Dispatcher: webrick
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Application: development
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing ActiveJob instrumentation
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing Net instrumentation
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-27 14:03:59 -0400 hilbert.local (82028)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-27 14:04:00 -0400 hilbert.local (82028)] INFO : Installing Rails 4 view instrumentation
+[2017-03-27 14:04:00 -0400 hilbert.local (82028)] INFO : Finished instrumentation
+[2017-03-27 14:04:00 -0400 hilbert.local (82028)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-27 14:04:03 -0400 hilbert.local (82028)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-03-27 14:04:03 -0400 hilbert.local (82028)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-03-27 14:05:25 -0400 hilbert.local (82028)] INFO : Starting Agent shutdown
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Environment: development
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Dispatcher: webrick
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Application: development
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing ActiveJob instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing Net instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Installing Rails 4 view instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Finished instrumentation
+[2017-03-27 14:06:00 -0400 hilbert.local (82346)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-27 14:06:17 -0400 hilbert.local (82346)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-03-27 14:06:17 -0400 hilbert.local (82346)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-03-27 14:59:29 -0400 hilbert.local (82346)] INFO : Starting Agent shutdown
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Starting the New Relic agent version 4.0.0.332 in "development" environment.
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] WARN : No configuration file found. Working directory = /Users/meagan/AA/curriculum/rails/projects/music_app/solution
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] WARN : Looked in these locations (based on defaults): /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/config/newrelic.yml, /Users/meagan/AA/curriculum/rails/projects/music_app/solution/newrelic.yml, /Users/meagan/.newrelic/newrelic.yml, /Users/meagan/newrelic.yml
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Environment: development
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Dispatcher: webrick
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Application: development
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing ActiveJob instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing ActiveRecord 4 instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing Net instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Installing Rails 4 view instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Finished instrumentation
+[2017-03-27 14:59:39 -0400 hilbert.local (85036)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-27 14:59:42 -0400 hilbert.local (85036)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-03-27 14:59:42 -0400 hilbert.local (85036)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-03-27 17:27:44 -0400 hilbert.local (85036)] INFO : Starting Agent shutdown

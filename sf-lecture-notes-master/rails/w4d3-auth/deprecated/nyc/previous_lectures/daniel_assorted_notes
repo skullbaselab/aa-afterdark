@@ -1,0 +1,40 @@
+
+cookies:
+  set_cookie
+    session[:my_secret] = secret
+    (network tab)
+  get_cookie
+    render text: session[:my_secret]
+    (note that refreshing persists)
+  set_flash
+    flash (refresh the page to compare to session cookie)
+    flash.now
+
+Add flash to tweets
+Comment in CSRF
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+Auth:
+  questions on user model
+  walk through session resource (rake routes) and sessions controller
+  what methods do we need?
+    log_in(user)
+      user.reset_session_token!
+      session[:session_token] = user.session_token
+    log_out
+      current_user.reset_session_token!
+      session[:session_token] = nil
+    current_user (let's go ahead and write this now)
+      return nil unless session[:session_token]
+      @current_user ||= User.find_by(session_token: session[:session_token])
+      (and update login/logout)
+    logged_in?
+      !!current_user
+
+    comment in tweets before_action
+    refresh and we are still logged in! clear cookies and we are NOT logged in
+
+    helper_method :current_user, :logged_in?
+      if logged in, show username and button to log out
+
+    create tweets with current user

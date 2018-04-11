@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: circles
+#
+#  id               :integer          not null, primary key
+#  circle_leader_id :integer          not null
+#  pod_id           :integer          not null
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  circle_leader_id: 1
+  pod_id: 1
+
+two:
+  circle_leader_id: 1
+  pod_id: 1

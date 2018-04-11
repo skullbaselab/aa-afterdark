@@ -1,0 +1,21 @@
+.outer {
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
+
+.inner-1 {
+  width: 200px;
+  height: 200px;
+
+  background-color: red;
+}
+
+.inner-2 {
+  height: 200px;
+  background-color: yellow;
+}
+
+.outer > span {
+  color: green;
+}

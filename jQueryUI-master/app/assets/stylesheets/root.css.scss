@@ -1,0 +1,66 @@
+// Place all the styles related to the root controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ui-draggable-dragging {
+  opacity: .5;
+}
+
+.big-box {
+    height: 500px;
+    width: 500px;
+    border: 10px solid red;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.small-box {
+    height: 250px;
+    width: 250px;
+    border: 5px solid blue;
+    background-color: purple;
+    display: inline-block;
+}
+
+.tiny-circle {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: green;
+}
+
+.bubble {
+  height: 100px;
+  width: 100px;
+  border: 5px solid green;
+  border-radius: 75px;
+  background-color: blue;
+}
+
+.basket {
+  height: 500px;
+  width:500px;
+  border: 5px solid yellow;
+  border-radius: 250px;
+  background-color: orange;
+}
+
+.in-basket {
+  background-color: red !important;
+}
+
+.sortable {
+  background-color: seagreen;
+  width: 400px;
+  height: 100%;
+  padding: 10px;
+}
+
+.bar {
+  background-color: pink;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+}

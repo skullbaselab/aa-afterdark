@@ -1,0 +1,67 @@
+=====jQuery UI=====
+ - Older library, bloated, but has some useful things
+
+ - Mainly we want the "Interactions":
+    Draggable
+    Droppable
+    Resizable
+    Selectable
+    Sortable
+
+ - Many of the widgets (and even interactions) are now replaced
+ by HTML5 components and CSS3 effects, or even Twitter Bootstrap widgets.
+
+===== Demo: Sorting =====
+ - Already done:
+   - turned off turbolinks
+   - set up bootstrap and backbone
+   - created API with lists and todos
+   - backbone view for the one page, no backbone router
+
+  - Steps:
+  1) gem 'jquery-ui-rails' in Gemfile; bundle install
+
+  2) require jquery.ui.sortable
+    - You can require only the parts you need using the jquery-ui-rails gem
+    This is similar to the bootstrap-sass gem.  Nice.
+    - Why sortable and not draggable?  Because what we really want is
+    sorting, not just drag and drop.  (See the difference in the docs.)
+
+  3) (Demo before and after of this.)
+  Use the 'todo_order' attribute as the comparator for your todos.
+  Comparator is a function that goes on the collection, not the model.
+  This should tell backbone to sort these by the todo_order.
+
+  4) Make any element sortable:
+  $(selector_here).sortable(options);
+  Specifically - find the list within this.$el, and make it sortable.
+
+  5) Add some options to style the sorted element and hook into events.
+  (opacity, stop, cursor)
+  https://jqueryui.com/sortable/
+
+  6) Handle the drop event with your events hash- just remember the prefix
+  (jQueryUI events are prefixed when referenced outside the options:
+  stop -> sortstop)
+
+  6.5) You can also re-save each item with an updated order, (the solution
+  does list sorting this way,)
+  but that is too many DB queries and HTTP requests.
+
+  7) Update todo_order on drop.  Easiest to update based on the todo items
+  before and after it.  Test this!
+    - use "data-" attributes to save the order on list items
+    - note that the callback gets both `event` and `ui` objects
+    - What to do about dropping at start of list?  End of list?
+    - #save with patch: true
+    - sort during render; don't listen to 'all' events! :S
+
+  (Is a demo of this step neccessary too?)
+  8) Dropping between lists works with equal ease:
+    - save list_id in another "data-", and add it to the list `ul` as well.
+    - update and save the list_id on drop as well
+    - Do we need to re-render both lists?  Nope.  We *DO* need to remove the
+    'todo' from the old lists's collection, and add it to the collection of
+    the new list.
+    - Need to set the 'connectWith' option.
+

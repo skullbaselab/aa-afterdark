@@ -1,0 +1,29 @@
+.green {
+ background: $green;
+}
+.pink {
+ background: $pink;
+}
+.blue {
+ background: $blue;
+}
+
+.sized-block {
+  width: 400px;
+  height: 100px;
+}
+
+.sized-inline {
+  width: 200px;
+  height: 300px;
+}
+
+.sized-ilb {
+	width: 400px;
+  height: 200px;
+  display: inline-block;
+}
+
+.ilb {
+  display: inline-block;
+}

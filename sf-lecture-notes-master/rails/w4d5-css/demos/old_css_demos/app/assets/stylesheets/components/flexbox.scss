@@ -1,0 +1,34 @@
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexbox {
+	img {
+		width: 100px;
+	}
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 20px;
+	}
+
+	nav > ul {
+		display: flex;
+	}
+
+	li {
+		justify-content: space-around;
+		margin: 0 10px;
+	}
+
+	.columnize {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.centered {
+		height: 200px;
+	}
+}

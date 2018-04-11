@@ -1,0 +1,28 @@
+body {
+  background-color: #2e2b26;
+}
+
+section {
+  height: 200px;
+  width: 400px;
+}
+
+.kirk {
+  background-color: gold;
+}
+
+.spock {
+  background-color: cadetblue;
+  height: 250px;
+}
+
+.uss-enterprise {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.klingon {
+  background-color: firebrick;
+}

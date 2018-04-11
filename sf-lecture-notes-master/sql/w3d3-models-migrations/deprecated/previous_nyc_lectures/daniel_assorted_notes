@@ -1,0 +1,82 @@
+-## Solutions
+- SQL injection
+  - https://xkcd.com/327/
+- Drill conventions
+  - Separate, snake_cased, singular file for each class
+  - Singular class names
+- Average karma
+____________
+
+Topic Outline
+- Capstone
+- React
+- jQuery
+- CSS
+- JavaScript
+- HTML
+- |R | Views
+- |ai| Controllers
+- |ls| Models (ActiveRecord) <- You are here
+- SQL
+- Ruby / OOP
+
+Rails!
+  - Makes it much easier to make Web apps, takes care of lots of configuration
+    (for example, rails does everything you wrote yesterday and much more)
+  - MVC architecture
+  - Stick to rails' conventions convention over configuration!
+
+  - rails new Twitter -database postgresql
+  - Tour of project structure
+    - app -> where MVC lives, you will spend lots of time in here
+    - bin -> scripts to setup/run app
+    - config -> configuration
+    - db -> migrations and schema
+    - lib -> code that has nothing to do with MVC
+    - log -> error logs, server logs
+    - public -> graphics, javascript that never changes
+    - test -> tests!
+    - tmp -> temporary
+    - vendor -> code stolen from others
+    - gemfile (add annotate)
+  - Our focus -> Models (M of MVC) and DB
+
+  - Goal -> make schema a reality
+    rails generate migration CreateTweets
+      play around in dbconsole
+    Country model
+      play around in console
+    rails generate migration CreateUsers
+    rails generate migration AddUserIdToTweets
+    model
+    assoc
+    rails generate migration AddIndexToForeignKey
+    rails generate migration CreateCountries
+    model
+    assoc
+    through assoc
+
+- Migration
+  - to create tables (remember import_db.sql ?)
+    - in rails we write migrations -> changes to the db
+    - migrations = history of db changes
+  - rails g migration
+    - creates a file, but nothing has happened yet
+    - note filename
+    - t.integer, t.string, timestamps, rails provides id
+  - RUN the migration -> now in the past, NEVER CHANGE THE FILE (rollback possible)
+  - Show schema
+    - version
+  - rails dbconsole
+    - INSERT and SELECT
+
+- Models
+  - ORM (ActiveRecord::Base gives you what you much of wrote yesterday)
+  - rails console and play around
+  - ActiveRecord::Base givs us all, find, find_by, where, save!
+
+- Associations
+  draw connections on board (use color!)
+  - has_many, belongs_to -> which table has the foreign key?
+  - through associations
+- Indices O(n) vs. O(logn)

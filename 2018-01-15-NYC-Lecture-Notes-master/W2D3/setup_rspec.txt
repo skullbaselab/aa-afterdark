@@ -1,0 +1,4 @@
+rspec --init (creates /spec and .rspec)
+create filename_spec.rb
+include in .rspec file:  --color, --format documentation
+require 'rspec' and require 'filename' in filename_rspec.rb

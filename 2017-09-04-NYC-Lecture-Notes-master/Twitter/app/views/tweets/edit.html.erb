@@ -1,0 +1,7 @@
+<form method="POST" action="<%= tweet_url(@tweet) %>">
+  <input type="hidden" name="_method" value="PATCH" />
+  <label for="input">Body</label>
+  <input id="input" type="text" name="tweet[body]" value="<%= @tweet.body %>" />
+  <input type="submit" value="Submit" />
+</form>
+<a href="<%= tweet_url(@tweet) %>">Back</a>

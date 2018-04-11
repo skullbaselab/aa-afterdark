@@ -1,0 +1,30 @@
+div.zoomable {
+/* 
+*  $target is positioned relative so that focus box can be positioned
+*  absolutely, relative to it.
+*/
+  position:relative; 
+  z-index: 0;
+}
+
+div.zoomable img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+div.zoomable .focus-box {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  border: thin solid white;
+}
+
+div.zoomed-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-repeat: no-repeat;
+}

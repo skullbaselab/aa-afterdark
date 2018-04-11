@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeviseDemo</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">Devise and OmniAuth Demo</a>
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="https://github.com/appacademy/lightning-talks/blob/master/w8d2/devise.md">Devise</a></li>
+          <li><a href="https://github.com/appacademy/lightning-talks/blob/master/w8d2/omniauth.md">OmniAuth</a></li>
+        </ul>
+      </div>
+    </div>
+<%= yield %>
+
+</body>
+</html>

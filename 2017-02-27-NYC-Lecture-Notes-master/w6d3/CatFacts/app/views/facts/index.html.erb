@@ -1,0 +1,43 @@
+<h1>Cat Facts</h1>
+<h3>You're now subscribed to cat facts!</h3>
+
+<article>
+  <section id='forms'>
+    <h2>Cat Fact Actions!</h2>
+    <form id='fetch-facts'>
+      <button>Fetch all facts!</button>
+    </form>
+
+    <form id='fetch-gif'>
+      <button>Fetch Cat Gif!</button>
+    </form>
+
+    <h3>Fetch specific fact!</h3>
+    <form id='fetch-fact'>
+      <!-- not using form default behavior -->
+      <label for="id">Fact Number:</label>
+      <input id="id" type="text" name="id">
+      <button id='fetch-fact'>Fetch fact!</button>
+    </form>
+
+    <h3>Post Fact!</h3>
+    <form id='post-fact'>
+      <label for="body">Fact Body:</label>
+      <input id="body" type="text" name="fact[body]">
+      <button >Post fact!</button>
+    </form>
+  </section>
+
+  <section id='facts'>
+    <h2>Cat Facts!</h2>
+    <ul>
+    </ul>
+  </section>
+
+
+  <section id='gifs'>
+    <h2>Cat Gifs!</h2>
+    <ul>
+    </ul>
+  </section>
+</article>

@@ -1,0 +1,22 @@
+.parent {
+  display: flex;
+  background-image: url('../images/pears.jpg');
+  background-size: cover;
+  justify-content: space-around;
+}
+
+
+li {
+  height: 100px;
+  width: 100px;
+  border: 10px groove red;
+  /*float: left;*/
+}
+
+
+
+/*.parent:after {
+  content: "";
+  display: block;
+  clear: both;
+}*/

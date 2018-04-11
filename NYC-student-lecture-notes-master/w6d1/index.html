@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      $( () => {
+
+        function Game($el) {
+          this.$el = $el;
+          this.squareRows = 3;
+          this.attachHandlers();
+        }
+
+        Game.prototype.attachHandlers = function() {
+          // $('button').on("click", this.clickButtonHandler.bind(this));
+          $('button').click(this.clickButtonHandler.bind(this));
+
+          // selector only available in '.on()' method, not in shortcut methods
+          // like '.click()', '.hover()', etc.
+          this.$el.on("click", 'li', this.clickLiHandler.bind(this));
+        }
+
+        Game.prototype.clickButtonHandler = function(e) {
+          const numNewLis = (this.squareRows + 1)**2 - (this.squareRows)**2;
+          const newWidth = $('.cat-click-grid').width() + 100;
+
+          $('.cat-click-grid').css('width', `${newWidth}`);
+
+          const $ul = $('ul');
+          let li = '<li></li>';
+
+          for (let i = 1; i < numNewLis; i++) {
+            li += '<li></li>';
+          }
+
+          $('li').removeClass("clicked");
+
+          $ul.append($(li));
+          this.squareRows++;
+        }
+
+        Game.prototype.clickLiHandler = function(e) {
+          const $li = $(e.currentTarget);
+          $li.toggleClass("clicked");
+          this.checkGameOver();
+        }
+
+        const $catClick = $('#cat-click-game');
+        new Game($catClick);
+
+        Game.prototype.checkGameOver = function() {
+          const numClicked = $('li.clicked').length;
+
+          if (numClicked === this.squareRows**2) {
+            alert('you won!');
+          }
+        }
+      })
+    </script>
+  </head>
+
+  <body>
+    <figure id="cat-click-game" class="cat-click">
+
+      <h1>Cat Click</h1>
+
+      <ul class="cat-click-grid group">
+
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <button>ENHANCE!</button>
+    </figure>
+  </body>
+</html>

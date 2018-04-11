@@ -1,0 +1,27 @@
+##git commands##
+
+- git status (displays files that have been changed)
+- git add 'file_name' (add file change to staging area)
+  -- *avoid using `git add -A` (adds all saved file changes)
+- git commit -m "commit message here" (commit file changes in staging area)
+- git diff
+
+- git config --local user.name (set local committer name)
+- git config --local user.email
+
+- git branch (displays all branches and current branch)
+- git checkout 'branch_name' (switches to given branch)
+- git checkout -b 'branch_name' (switches and creates branch)
+- git merge 'branch_name' (merges given branch into current branch, may cause merge conflict)
+
+- git remote add 'remote_alias' 'remote_repo_url' (add remote git repo)
+- git push -u origin 'branch_name' (push committed changes to given branch in remote repo)
+  -- *only need to use `-u` first time pushing a branch
+- git pull 'remote_branch_name' (fetches given remote branch AND merges it into the current local branch)
+
+##Tips and Notes##
+
+*Add .gitignore to avoid adding/committing unnecessary files
+*Aim to keep master branch working/bug-free
+*Use branches to develop/test new features
+*pull requests: used mostly in group projects so teammates can review requested changes before merging

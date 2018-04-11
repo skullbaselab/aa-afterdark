@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robot Knob!</title>
+
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/jquery.serializejson.js"></script>
+    <script src="../js/knob.js"></script>
+  </head>
+
+  <body>
+    <h1>Build a Robot!</h1>
+
+    <form id="robot">
+      <label>
+        Name
+        <input type="text" name="robot[name]">
+      </label>
+      <br>
+
+      <label>
+        Strength Points
+        <input type="knob" name="robot[strength]">
+      </label>
+      <br>
+
+      <label>
+        Cuddliness Points
+        <input type="knob" name="robot[cuddliness]">
+      </label>
+      <br>
+
+      <input type="submit" value="Create Your Robot!">
+    </form>
+  </body>
+</html>

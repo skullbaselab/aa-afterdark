@@ -1,0 +1,31 @@
+<h1><%= @tweet.title %></h1>
+
+<p><%= @tweet.user.username %></p>
+<p><%= @tweet.body %></p>
+
+<%= link_to "Edit Tweet", edit_tweet_url(@tweet) %>
+
+<h2>Reply</h2>
+
+<ul>
+  <% @tweet.replies.each do |reply| %>
+  <li>
+    <%= reply.body %>
+    <%= button_to "Remove Reply", reply_url(reply), :method => :delete %>
+  </li>
+  <% end %>
+</ul>
+
+<h2>Add Reply</h2>
+
+<form action="<%= replies_url %>" method="post">
+  <%= auth_token_input %>
+
+  <label>
+    Reply Body
+    <input type="text" name="reply[body]">
+  </label>
+
+  <input type="hidden" name="reply[tweet_id]" value="<%= @tweet.id %>">
+  <input type="submit" value="Add Reply">
+</form>

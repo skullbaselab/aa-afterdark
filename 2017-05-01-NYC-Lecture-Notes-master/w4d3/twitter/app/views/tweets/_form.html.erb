@@ -1,0 +1,16 @@
+<% persisted = tweet.persisted? %>
+
+<% action_url = persisted ? tweet_url(tweet) : tweets_url %>
+<% button_text = persisted ? "UPDATE TWEET" : "CREATE TWEET" %>
+
+
+<form class="" action="<%= action_url %>" method="post">
+  <% if persisted %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
+
+  <label for="body">TWEET BODY</label>
+
+  <input id="body" type="text" name="tweet[body]" value="<%= tweet.body %>">
+  <input type="submit" name="" value="<%= button_text %>">
+</form>

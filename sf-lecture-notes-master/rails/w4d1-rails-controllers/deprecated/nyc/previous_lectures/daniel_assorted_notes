@@ -1,0 +1,62 @@
+Web
+
+client - server
+request - response
+
+stateless - independent transactions
+begin writing out req/res cycle
+
+request:
+  header: verb, url
+  (body: form data)
+
+response:
+  header: status code
+  body: json/html
+
+URL -> protocol, domain, port, path, query, fragment
+html verbs / CRUD:
+  get - shouldn't modify resources (safe)
+  post
+  patch/put
+  delete
+
+network tab
+
+_____________________
+
+RESTful architecture
+  information stored and accessed in a clear and consistent way
+  think of everything in terms of CRUD on resources
+  resource(s) represented by url
+  url + http verb used in predictable ways
+  write out restful routes
+
+----------------------
+Rails -> gets a request and build up a response
+
+Routes
+  router determines which controller should handle req, based on url
+  resources :tweets
+  rake routes
+   url helpers
+   controller#action
+  visit before making controller
+
+Controllers
+  router instantiates controller and calls action
+  uses model (and view) to put together response, then gone forever
+  emphasize statelessness - brand new instance of the controller each time
+  only ONE action can ever be called per cycle
+  only way to persist data on the server is in the db
+  controllers shouldn't do much - middlemen
+
+Show rails part of req/res cycle
+Rails app with postman - get and post are enough
+
+Params
+  method returns a hash-like object
+  route params (:id), form data, query string
+  whitelisting params
+
+Look at server logs!

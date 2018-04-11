@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Auth!</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Oswald';
+        color: #444;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        background-color: #ff3850;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+      }
+      li {
+        text-align: left;
+        font-size: 28px;
+      }
+      img {
+        display: block;
+        height: auto;
+        width: 600px;
+      }
+
+      .image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+      # Agenda
+
+      1. Motivation
+      2. Cookies
+      3. Session Cookie
+      4. Flash and error handling
+      5. User Model
+      6. ApplicationController
+      7. SessionsController
+      8. CSRF
+
+      ---
+
+      # Motivation
+
+      - Create logged in and logged out state
+      - Protect resources based on this state
+      - Persist logged in state across req/res cycles
+
+      ---
+      <div class="image-wrapper">
+        <h2>But wait, I thought HTTP was stateless...</h2>
+      </div>
+
+      ---
+      <div class="image-wrapper">
+        <img src="./lecture_images/cookie_monster.jpeg" alt="cookie_monster">
+      </div>
+      ---
+
+      # Cookies
+
+      - A cookie is a piece of information that the server sends to the client and the client stores
+      - This cookie will be sent back to the server with every single request
+      - Cookies are signed. Rails uses a key to verify the cookie
+      - Cookie demo!
+
+      ---
+
+      # Session
+
+      - The session cookie is just a cookie but with preset properties
+      - Encrypts and sets expiration
+      - Session method in rails allows us to key into the session cookie
+      - Session collects all key value pairs into one big cookie
+
+      ---
+      <div class="image-wrapper">
+        <img src="./lecture_images/flash.jpeg" alt="flash">
+      </div>
+      ---
+
+      # Flash
+
+      - The flash is actually part of the session cookie
+      - Exists for the current response, and one more req/res cycle
+      - Flash.now isn't actually a cookie but can be conveniently accessed with flash method
+      - Flash.now lasts for only the current response
+
+      ---
+      <div class="image-wrapper">
+        <img src="./lecture_images/pass.jpeg" alt="cookie_monster">
+      </div>
+
+    </textarea>
+
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      const slideshow = remark.create();
+    </script>
+  </body>
+</html>

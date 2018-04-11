@@ -1,0 +1,40 @@
+initialize a local repository:
+  git init
+
+add to staging area:
+  git add <filename>
+
+commit: (-m allows appending a message)
+  git commit -m "Describe the changes I made"
+
+check the staging area:
+  git status
+
+see differences between working and stage
+  git diff
+    or
+  git diff <filename>
+
+see history of commits
+  git log
+
+remove file from staging area:
+  git reset <filename>
+
+change username and email locally
+  git config --local user.name "MYNAME"
+  git config --local user.email "myemail@email.com"
+
+see all branches
+  git branch
+
+create a new branch and go to it
+  git checkout -b branch-name
+
+move to a different branch
+  git checkout branch-name
+
+merge branch into master
+  git merge branch-name master
+
+** Git repositories inside of git repositories gets messy! Don't do it!

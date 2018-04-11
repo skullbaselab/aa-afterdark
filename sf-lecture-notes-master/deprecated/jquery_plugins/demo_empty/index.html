@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Ya</title>
+  <script type="text/javascript" charset="utf-8" src='jquery.js'></script>
+  <script src='colorify.js'></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <form action="" method="">
+    <label for="">Colors:</label>
+    <input type="text" name="color" id="" value="" />
+    <input class="block" type="submit" name="" id="" value="Add Color" />
+  </form>
+  <ul class="color-list">
+    <li class="color">blue</li>
+    <li class="color">green</li>
+  </ul>
+
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+      var $form = $('form');
+      $form.submit(function(event) {
+        event.preventDefault();
+        var $input = $form.find('input[name=color]');
+        var color = $input.val();
+        $('.color-list').append("<li class='color'>" + color + "</li>");
+        $input.val('');
+      });
+    });
+
+    $(function() {
+      $("li.color").on("click", "li.color",  function(e){
+        //clicking on a list item with a color name gets me here
+        var color = $(e.currentTarget);
+        //color is a list item
+        color.colorify();
+        // color.css("color", color.text());
+
+      })
+    });
+
+  </script>
+</body>
+
+</html>

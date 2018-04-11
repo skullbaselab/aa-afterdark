@@ -1,0 +1,794 @@
+Started GET "/" for ::1 at 2017-07-03 09:18:36 -0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "art_share_api_development" does not exist
+):
+  
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:705:in `rescue in connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/" for ::1 at 2017-07-03 09:21:18 -0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "art_share_api_development" does not exist
+):
+  
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:705:in `rescue in connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/" for ::1 at 2017-07-03 09:21:22 -0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "art_share_api_development" does not exist
+):
+  
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:705:in `rescue in connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+  [1m[35mSQL (0.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "artwork_shares" CASCADE[0m
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE "artwork_shares" ("id" bigserial primary key, "artwork_id" integer NOT NULL, "viewer_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artwork_shares_on_artwork_id_and_viewer_id" ON "artwork_shares"  ("artwork_id", "viewer_id")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_artwork_shares_on_artwork_id" ON "artwork_shares"  ("artwork_id")[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE  INDEX  "index_artwork_shares_on_viewer_id" ON "artwork_shares"  ("viewer_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "artworks" CASCADE[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "image_url" character varying NOT NULL, "artist_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE  INDEX  "index_artworks_on_artist_id" ON "artworks"  ("artist_id")[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artworks_on_image_url" ON "artworks"  ("image_url")[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artworks_on_title_and_artist_id" ON "artworks"  ("title", "artist_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (18.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text NOT NULL, "user_id" integer NOT NULL, "artwork_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_artwork_id" ON "comments"  ("artwork_id")[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments"  ("user_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "likes" CASCADE[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "user_id" integer, "likeable_type" character varying, "likeable_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_likeable_type_and_likeable_id" ON "likes"  ("likeable_type", "likeable_id")[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_likes_on_user_id_and_likeable_type" ON "likes"  ("user_id", "likeable_type")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170715031356)[0m
+  [1m[35m (3.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170715031212),
+(20170715031236),
+(20170715031310),
+(20170715031337);
+
+[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-01 00:26:03.086316"], ["updated_at", "2017-08-01 00:26:03.086316"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "artwork_shares" CASCADE[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "artwork_shares" ("id" bigserial primary key, "artwork_id" integer NOT NULL, "viewer_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artwork_shares_on_artwork_id_and_viewer_id" ON "artwork_shares"  ("artwork_id", "viewer_id")[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE  INDEX  "index_artwork_shares_on_artwork_id" ON "artwork_shares"  ("artwork_id")[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE  INDEX  "index_artwork_shares_on_viewer_id" ON "artwork_shares"  ("viewer_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "artworks" CASCADE[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "image_url" character varying NOT NULL, "artist_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE  INDEX  "index_artworks_on_artist_id" ON "artworks"  ("artist_id")[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artworks_on_image_url" ON "artworks"  ("image_url")[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artworks_on_title_and_artist_id" ON "artworks"  ("title", "artist_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text NOT NULL, "user_id" integer NOT NULL, "artwork_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_artwork_id" ON "comments"  ("artwork_id")[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments"  ("user_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "likes" CASCADE[0m
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "user_id" integer, "likeable_type" character varying, "likeable_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_likeable_type_and_likeable_id" ON "likes"  ("likeable_type", "likeable_id")[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_likes_on_user_id_and_likeable_type" ON "likes"  ("user_id", "likeable_type")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170715031356)[0m
+  [1m[35m (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170715031212),
+(20170715031236),
+(20170715031310),
+(20170715031337);
+
+[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-01 00:26:03.373829"], ["updated_at", "2017-08-01 00:26:03.373829"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mArtwork Load (1.3ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  [1m[36mArtworkShare Load (1.0ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares"[0m
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mLike Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "robert"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "robert"], ["created_at", "2017-08-01 00:26:03.490900"], ["updated_at", "2017-08-01 00:26:03.490900"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bill"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "bill"], ["created_at", "2017-08-01 00:26:03.496899"], ["updated_at", "2017-08-01 00:26:03.496899"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."image_url" = $1 LIMIT $2[0m  [["image_url", "google.com"], ["LIMIT", 1]]
+  [1m[36mArtwork Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."title" = $1 AND "artworks"."artist_id" = $2 LIMIT $3[0m  [["title", "nighthawks"], ["artist_id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "nighthawks"], ["image_url", "google.com"], ["artist_id", 1], ["created_at", "2017-08-01 00:26:03.548575"], ["updated_at", "2017-08-01 00:26:03.548575"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."image_url" = $1 LIMIT $2[0m  [["image_url", "google1.com"], ["LIMIT", 1]]
+  [1m[36mArtwork Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."title" = $1 AND "artworks"."artist_id" = $2 LIMIT $3[0m  [["title", "mona lisa"], ["artist_id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "mona lisa"], ["image_url", "google1.com"], ["artist_id", 2], ["created_at", "2017-08-01 00:26:03.559126"], ["updated_at", "2017-08-01 00:26:03.559126"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtworkShare Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artwork_shares" WHERE "artwork_shares"."artwork_id" = $1 AND "artwork_shares"."viewer_id" = $2 LIMIT $3[0m  [["artwork_id", 1], ["viewer_id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 1], ["viewer_id", 2], ["created_at", "2017-08-01 00:26:03.578007"], ["updated_at", "2017-08-01 00:26:03.578007"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtworkShare Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artwork_shares" WHERE "artwork_shares"."artwork_id" = $1 AND "artwork_shares"."viewer_id" = $2 LIMIT $3[0m  [["artwork_id", 2], ["viewer_id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 2], ["viewer_id", 2], ["created_at", "2017-08-01 00:26:03.587085"], ["updated_at", "2017-08-01 00:26:03.587085"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "great!"], ["user_id", 1], ["artwork_id", 1], ["created_at", "2017-08-01 00:26:03.605435"], ["updated_at", "2017-08-01 00:26:03.605435"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "another great one"], ["user_id", 2], ["artwork_id", 2], ["created_at", "2017-08-01 00:26:03.613041"], ["updated_at", "2017-08-01 00:26:03.613041"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 1], ["likeable_id", 1], ["likeable_type", "Comment"], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["likeable_type", "Comment"], ["likeable_id", 1], ["created_at", "2017-08-01 00:26:03.635566"], ["updated_at", "2017-08-01 00:26:03.635566"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 2], ["likeable_id", 2], ["likeable_type", "Artwork"], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["likeable_type", "Artwork"], ["likeable_id", 2], ["created_at", "2017-08-01 00:26:03.645286"], ["updated_at", "2017-08-01 00:26:03.645286"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 1], ["likeable_id", 2], ["likeable_type", "Artwork"], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["likeable_type", "Artwork"], ["likeable_id", 2], ["created_at", "2017-08-01 00:26:03.653908"], ["updated_at", "2017-08-01 00:26:03.653908"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 2], ["likeable_id", 1], ["likeable_type", "Comment"], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["likeable_type", "Comment"], ["likeable_id", 1], ["created_at", "2017-08-01 00:26:03.662628"], ["updated_at", "2017-08-01 00:26:03.662628"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (1.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."artwork_id" = $1[0m  [["artwork_id", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "artworks" WHERE "artworks"."id" = $1[0m  [["id", 1]]
+  [1m[36mArtworkShare Load (0.5ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 2]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."artwork_id" = $1[0m  [["artwork_id", 2]]
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 2]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "artworks" WHERE "artworks"."id" = $1[0m  [["id", 2]]
+  [1m[36mArtworkShare Load (0.6ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 2]]
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "artwork_shares" WHERE "artwork_shares"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "artwork_shares" WHERE "artwork_shares"."id" = $1[0m  [["id", 2]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  [1m[36mArtworkShare Load (0.5ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares"[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mLike Load (1.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 3]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 4]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "robert"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "robert"], ["created_at", "2017-08-01 00:26:14.644310"], ["updated_at", "2017-08-01 00:26:14.644310"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bill"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "bill"], ["created_at", "2017-08-01 00:26:14.650637"], ["updated_at", "2017-08-01 00:26:14.650637"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."image_url" = $1 LIMIT $2[0m  [["image_url", "google.com"], ["LIMIT", 1]]
+  [1m[36mArtwork Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."title" = $1 AND "artworks"."artist_id" = $2 LIMIT $3[0m  [["title", "nighthawks"], ["artist_id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "nighthawks"], ["image_url", "google.com"], ["artist_id", 3], ["created_at", "2017-08-01 00:26:14.669909"], ["updated_at", "2017-08-01 00:26:14.669909"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."image_url" = $1 LIMIT $2[0m  [["image_url", "google1.com"], ["LIMIT", 1]]
+  [1m[36mArtwork Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "artworks" WHERE "artworks"."title" = $1 AND "artworks"."artist_id" = $2 LIMIT $3[0m  [["title", "mona lisa"], ["artist_id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "image_url", "artist_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "mona lisa"], ["image_url", "google1.com"], ["artist_id", 4], ["created_at", "2017-08-01 00:26:14.679490"], ["updated_at", "2017-08-01 00:26:14.679490"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtworkShare Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artwork_shares" WHERE "artwork_shares"."artwork_id" = $1 AND "artwork_shares"."viewer_id" = $2 LIMIT $3[0m  [["artwork_id", 3], ["viewer_id", 4], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 3], ["viewer_id", 4], ["created_at", "2017-08-01 00:26:14.692615"], ["updated_at", "2017-08-01 00:26:14.692615"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtworkShare Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "artwork_shares" WHERE "artwork_shares"."artwork_id" = $1 AND "artwork_shares"."viewer_id" = $2 LIMIT $3[0m  [["artwork_id", 4], ["viewer_id", 4], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 4], ["viewer_id", 4], ["created_at", "2017-08-01 00:26:14.702297"], ["updated_at", "2017-08-01 00:26:14.702297"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "great!"], ["user_id", 3], ["artwork_id", 3], ["created_at", "2017-08-01 00:26:14.712826"], ["updated_at", "2017-08-01 00:26:14.712826"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("body", "user_id", "artwork_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "another great one"], ["user_id", 4], ["artwork_id", 4], ["created_at", "2017-08-01 00:26:14.720244"], ["updated_at", "2017-08-01 00:26:14.720244"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 3], ["likeable_id", 3], ["likeable_type", "Comment"], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["likeable_type", "Comment"], ["likeable_id", 3], ["created_at", "2017-08-01 00:26:14.734976"], ["updated_at", "2017-08-01 00:26:14.734976"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 4], ["likeable_id", 4], ["likeable_type", "Artwork"], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["likeable_type", "Artwork"], ["likeable_id", 4], ["created_at", "2017-08-01 00:26:14.744328"], ["updated_at", "2017-08-01 00:26:14.744328"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 3], ["likeable_id", 4], ["likeable_type", "Artwork"], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 3], ["likeable_type", "Artwork"], ["likeable_id", 4], ["created_at", "2017-08-01 00:26:14.752863"], ["updated_at", "2017-08-01 00:26:14.752863"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLike Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."likeable_id" = $2 AND "likes"."likeable_type" = $3 LIMIT $4[0m  [["user_id", 4], ["likeable_id", 3], ["likeable_type", "Comment"], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "likeable_type", "likeable_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 4], ["likeable_type", "Comment"], ["likeable_id", 3], ["created_at", "2017-08-01 00:26:14.761604"], ["updated_at", "2017-08-01 00:26:14.761604"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-07-31 17:26:31 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (9.3ms)
+Completed 200 OK in 35ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/artworks" for 127.0.0.1 at 2017-07-31 17:27:33 -0700
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 2, expected 1):
+  activerecord (5.1.2) lib/active_record/relation/query_methods.rb:643:in `or'
+  app/models/artwork.rb:32:in `artworks_for_user_id'
+  app/controllers/artworks_controller.rb:19:in `index'
+  actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+  activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+  activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+  actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+  actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.1.2) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/74709a26c7b0cc95/variables" for 127.0.0.1 at 2017-07-31 17:27:33 -0700
+Started GET "/users/1/artworks" for 127.0.0.1 at 2017-07-31 17:28:21 -0700
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 2, expected 1):
+  activerecord (5.1.2) lib/active_record/relation/query_methods.rb:643:in `or'
+  app/models/artwork.rb:32:in `artworks_for_user_id'
+  app/controllers/artworks_controller.rb:19:in `index'
+  actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+  activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+  activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+  actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+  actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.1.2) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/8a6bdcdfa3249974/variables" for 127.0.0.1 at 2017-07-31 17:28:21 -0700
+Started GET "/users/1/artworks" for 127.0.0.1 at 2017-07-31 17:28:23 -0700
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 2, expected 1):
+  activerecord (5.1.2) lib/active_record/relation/query_methods.rb:643:in `or'
+  app/models/artwork.rb:32:in `artworks_for_user_id'
+  app/controllers/artworks_controller.rb:19:in `index'
+  actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+  activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+  activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+  actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+  actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.1.2) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/c2f86562101e024d/variables" for 127.0.0.1 at 2017-07-31 17:28:23 -0700
+Started GET "/users/1/artworks" for 127.0.0.1 at 2017-07-31 17:29:44 -0700
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mArtwork Load (3.6ms)[0m  [1m[34mSELECT DISTINCT "artworks".* FROM "artworks" LEFT OUTER JOIN "artwork_shares" ON "artwork_shares"."artwork_id" = "artworks"."id" WHERE ((artworks.artist_id = '1') OR (artwork_shares.viewer_id = '1')[0m
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 8.9ms)
+
+
+
+PG::SyntaxError - ERROR:  syntax error at end of input
+LINE 1: ...rtworks.artist_id = '1') OR (artwork_shares.viewer_id = '1')
+                                                                       ^
+:
+  activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:620:in `block (2 levels) in exec_no_cache'
+  activesupport (5.1.2) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+  activesupport (5.1.2) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+  activesupport (5.1.2) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+  activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:619:in `block in exec_no_cache'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block (2 levels) in log'
+  /Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:611:in `block in log'
+  activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:603:in `log'
+  activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:618:in `exec_no_cache'
+  activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:605:in `execute_and_clear'
+  activerecord (5.1.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:79:in `exec_query'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract/database_statements.rb:361:in `select'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract/database_statements.rb:42:in `select_all'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract/query_cache.rb:95:in `block in select_all'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract/query_cache.rb:117:in `block in cache_sql'
+  /Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract/query_cache.rb:104:in `cache_sql'
+  activerecord (5.1.2) lib/active_record/connection_adapters/abstract/query_cache.rb:95:in `select_all'
+  activerecord (5.1.2) lib/active_record/querying.rb:39:in `find_by_sql'
+  activerecord (5.1.2) lib/active_record/relation.rb:659:in `exec_queries'
+  activerecord (5.1.2) lib/active_record/relation.rb:546:in `load'
+  activerecord (5.1.2) lib/active_record/relation.rb:255:in `records'
+  activerecord (5.1.2) lib/active_record/relation/delegation.rb:39:in `as_json'
+  activesupport (5.1.2) lib/active_support/json/encoding.rb:33:in `encode'
+  activesupport (5.1.2) lib/active_support/json/encoding.rb:20:in `encode'
+  activesupport (5.1.2) lib/active_support/core_ext/object/json.rb:39:in `to_json'
+  actionpack (5.1.2) lib/action_controller/metal/renderers.rb:156:in `block in <module:Renderers>'
+  actionpack (5.1.2) lib/action_controller/metal/renderers.rb:149:in `block in _render_to_body_with_renderer'
+  /Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/set.rb:324:in `each'
+  actionpack (5.1.2) lib/action_controller/metal/renderers.rb:145:in `_render_to_body_with_renderer'
+  actionpack (5.1.2) lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+  actionpack (5.1.2) lib/abstract_controller/rendering.rb:24:in `render'
+  actionpack (5.1.2) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.1.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/louiscruz/.rbenv/versions/2.4.1/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
+  activesupport (5.1.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/artworks_controller.rb:19:in `index'
+  actionpack (5.1.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:186:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+  actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+  activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+  actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+  activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+  actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+  actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+  actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+  actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+  actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+  activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+  actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.2.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.1.2) lib/rails/engine.rb:522:in `call'
+  puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+  puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+  puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+  puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+  puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/5a8cec09a556e3a7/variables" for 127.0.0.1 at 2017-07-31 17:29:44 -0700
+Started GET "/users/1/artworks" for 127.0.0.1 at 2017-07-31 17:30:17 -0700
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mArtwork Load (8.0ms)[0m  [1m[34mSELECT DISTINCT "artworks".* FROM "artworks" LEFT OUTER JOIN "artwork_shares" ON "artwork_shares"."artwork_id" = "artworks"."id" WHERE ((artworks.artist_id = '1') OR (artwork_shares.viewer_id = '1'))[0m
+Completed 200 OK in 37ms (Views: 9.8ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/users/2/artworks" for 127.0.0.1 at 2017-07-31 17:30:25 -0700
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT DISTINCT "artworks".* FROM "artworks" LEFT OUTER JOIN "artwork_shares" ON "artwork_shares"."artwork_id" = "artworks"."id" WHERE ((artworks.artist_id = '2') OR (artwork_shares.viewer_id = '2'))[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mArtwork Load (1.0ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 3], ["LIMIT", 11]]
+Started GET "/users/3/artworks" for 127.0.0.1 at 2017-07-31 17:31:34 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworksController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mArtwork Load (3.0ms)[0m  [1m[34mSELECT DISTINCT "artworks".* FROM "artworks" LEFT OUTER JOIN "artwork_shares" ON "artwork_shares"."artwork_id" = "artworks"."id" WHERE ((artworks.artist_id = '3') OR (artwork_shares.viewer_id = '3'))[0m
+Completed 200 OK in 89ms (Views: 45.9ms | ActiveRecord: 12.2ms)
+
+

@@ -1,0 +1,49 @@
+
+/* In order to provide % height to an element we need the parents to bubble all the way up to html! */
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+
+	background: url(http://s.cdpn.io/3/dark_wall_@2X.png);
+  background-size: 300px 300px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+footer {
+	background: gainsboro;
+}
+
+article, aside {
+	background: #eee;
+	padding: 20px;
+}
+
+footer {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}

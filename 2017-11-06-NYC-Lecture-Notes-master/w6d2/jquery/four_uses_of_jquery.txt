@@ -1,0 +1,15 @@
+Four Uses of jQuery:
+
+1. $(CSSSelector): Wraps selected HTML elements in jQuery object.
+
+2. $(HTML element): Wraps HTML element in jQuery object.
+
+3. $(HTML code): Creates HTML element and wraps it in jQuery object.
+
+4. $(callback): Invokes callback when document is ready.
+
+Two types of Targets:
+
+1. currentTarget: element on which event handler was installed
+
+2. target: element on which event handler was triggered

@@ -1,0 +1,296 @@
+/* --- RESET --- */
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+/* --- ELEMENTS --- */
+
+body {
+  box-sizing: content-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.1666666666;
+  background: #eee;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --- CLEARFIX --- */
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* --- HEADER --- */
+
+.header {
+  background: #f00;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.header a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.header-nav {
+  margin: 0 auto;
+  width: 900px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.header-logo {
+  float: left;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list > li {
+  float: left;
+  border-left: 1px solid #ccc;
+}
+
+.badge {
+  display: inline;
+  font-size: 14px;
+  padding: 1px 6px;
+  background: #000;
+  border-radius: 50%;
+}
+
+/* --- CONTENT --- */
+
+.content {
+  margin: 0 auto;
+  background: #fff;
+  width: 900px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.content-sidebar {
+  float: left;
+  width: 200px;
+  padding: 20px;
+}
+
+.content-main {
+  float: right;
+  width: 620px;
+  padding: 20px 20px 20px 19px;
+  border-left: 1px solid #ccc;
+}
+
+.content-header {
+  font-size: 36px;
+  text-align: right;
+}
+
+/* --- SIDEBAR --- */
+
+.profile-picture {
+  display: block;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.online {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  color: #fff;
+  background: #0c0;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.profile-info {
+  margin: 20px 0;
+}
+
+.profile-info > h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.profile-info > p {
+  margin: 20px 0 0 0;
+}
+
+.profile-nav {
+
+}
+
+.profile-nav > li {
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-nav > li:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.profile-nav a {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* --- THUMB --- */
+
+.thumb {
+  display: block;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #000;
+}
+
+/* --- FORM --- */
+
+.form {
+  margin: 20px 0;
+}
+
+.form-thumb {
+  float: left;
+}
+
+.form-fieldset {
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 19px;
+  width: 500px;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.input {
+  margin: 0 0 20px 0;
+}
+
+.input > label {
+  display: block;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+}
+
+.input > input,
+.input > textarea {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 478px;
+}
+
+.input > input {
+
+}
+
+.input > textarea {
+  height: 120px;
+}
+
+.submit {
+  margin: 20px 0 0 0;
+}
+
+.submit > button {
+  padding: 10px 20px;
+  color: #fff;
+  background: #0c0;
+  font-weight: bold;
+}
+
+/* --- POSTS --- */
+
+.posts {
+
+}
+
+.post {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.post:last-child {
+  padding: 20px 0 0 0;
+}
+
+.post-thumb {
+  float: left;
+}
+
+.post-body {
+  float: left;
+  padding: 0 0 0 20px;
+  width: 540px;
+}
+
+.post-body > h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.post-body > p {
+
+}
+
+/* --- FOOTER --- */
+
+.footer {
+  width: 860px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #fff;
+  color: #aaa;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.footer-copy {
+  float: left;
+}
+
+.footer-links {
+  float: right;
+}
+
+.footer-links > li {
+  float: left;
+  padding: 0 0 0 20px;
+}

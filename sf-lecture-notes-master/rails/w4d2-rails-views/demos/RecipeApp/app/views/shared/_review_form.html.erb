@@ -1,0 +1,21 @@
+<% _action = review ? recipe_review_url(@recipe, review) : recipe_reviews_url(@recipe) %>
+<% _verb = review ? "PATCH" : "POST" %>
+
+<form action="<%= _action %>" method="post">
+	<!-- Question: How do we tell Rails to make a PATCH or DELETE request using an HTML Form -->
+  <!-- Answer: Use a hidden input field with name="_method" and value="PATCH" -->
+  <input type="hidden" name="_method" value="<%= _verb %>">
+      <label>
+        <strong>Name:</strong>
+        <input id="name" type="text" name="review[username]" value="<%= review && review.user.username %>">
+      </label>
+
+      <label>Review
+        <textarea name="review[body]" cols="30" rows="10">
+        	<%= review && review.body %>
+        </textarea>
+      </label>
+     
+      <button>Submit</button>
+    </form>
+</section>

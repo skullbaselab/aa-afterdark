@@ -1,0 +1,44 @@
+/*
+
+- Inherited styles
+- Universal styles
+- Elements and pseudo-elements
+- Classes, attributes, and pseudo-selectors
+- IDs
+- Inline Styles
+- The !Important flag
+
+*/
+
+.specificity {
+
+	* {
+		color: $pink;
+	}
+
+	section {
+		color: $light-blue;
+	}
+
+	.test {
+		color: $green;
+	}
+
+	span {
+		color: $orange;
+		// color: $orange !important;
+	}
+
+	.span-class {
+		color: $black;
+	}
+
+	#span-id {
+		color: $blue;
+	}
+  
+	#section-id span {
+		color: $purple;
+	}
+
+}

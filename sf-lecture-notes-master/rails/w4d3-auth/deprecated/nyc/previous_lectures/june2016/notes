@@ -1,0 +1,4 @@
+request comes in
+router uses url and verb to instantiate controller and call action
+controller asks model for data
+controller exposes that data to the view

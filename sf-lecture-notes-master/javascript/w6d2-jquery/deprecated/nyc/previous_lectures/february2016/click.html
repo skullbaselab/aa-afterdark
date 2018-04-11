@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Click A Cat!</title>
+  <style>
+
+  /* RESET */
+
+  html, body, figure, h1, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    text-align: inherit;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+
+    box-sizing: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .group:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  body {
+    box-sizing: content-box;
+    background: pink;
+    color: lightgreen;
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .cat-click {
+
+  }
+
+  .cat-click > h1 {
+
+  }
+
+  .cat-click-grid {
+    margin: auto;
+    width: 300px;
+    border: 5px solid black;
+    background: url("cat.jpg");
+    background-size: cover;
+  }
+
+  .cat-click-grid > li {
+    border: 5px solid black;
+    float: left;
+    width: 90px;
+    height: 90px;
+    background: purple;
+    cursor: pointer;
+  }
+
+  .cat-click-grid > li.clicked {
+    background: transparent;
+  }
+
+  .cat-click-grid > li:hover {
+    background: yellow;
+  }
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <script src="jquery.js"></script>
+  <script>
+
+  // DOES NOT WORK
+  $("h1").css({"color": "red"});
+
+  $(document).on("ready", function(e){
+
+    // WAIT FOR DOCUMENT TO BE READY
+    // WORKS!!!
+    $("h1").css({"color": "blue"});
+
+  });
+
+  $(document).ready(function(){
+
+  });
+
+  $(function(){
+
+  });
+
+  </script>
+
+  <figure id="cat-click-game-1" class="cat-click">
+
+    <h1>Cat Click</h1>
+
+    <ul class="cat-click-grid group">
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </ul>
+
+    <button>LEVEL UP</button>
+
+  </figure>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <figure id="cat-click-game-2" class="cat-click">
+
+    <h1>Cat Click</h1>
+
+    <ul class="cat-click-grid group">
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </ul>
+
+    <button>LEVEL UP</button>
+
+  </figure>
+
+  <script>
+  //
+  // $(document).on("ready", function(){
+  //
+  //   // console.log($("li"));
+  //
+  //
+  //   // $("li").on("click", function(e){
+  //   //
+  //   //   // console.log("e -->", e);
+  //   //
+  //   //   console.log("e.currentTarget -->", e.currentTarget);
+  //   //
+  //   //   var $li = $(e.currentTarget);
+  //   //
+  //   //   $li.toggleClass("clicked");
+  //   //
+  //   // });
+  //
+  //
+  //   $("button").on("click", function(e){
+  //
+  //     console.log("e -->", e);
+  //
+  //     console.log("e.currentTarget -->", e.currentTarget);
+  //
+  //     var $html = $("<li></li><li></li><li></li>");
+  //
+  //     $(".cat-click-grid").append($html);
+  //
+  //   });
+  //
+  //   // $("body").on("click", function(e){
+  //   //
+  //   //   console.log("e -->", e);
+  //   //
+  //   //   var $target = $(e.target);
+  //   //
+  //   //   if($target.is("li")) {
+  //   //
+  //   //     $target.toggleClass("clicked");
+  //   //
+  //   //   }
+  //   //
+  //   // });
+  //
+  //   $(".cat-click-grid").on("click", "li", function(e){
+  //
+  //
+  //     console.log("e -->", e);
+  //
+  //     var $li = $(e.currentTarget);
+  //
+  //     $li.toggleClass("clicked");
+  //
+  //     // if($("li").length == $("li.clicked").length ){
+  //     //   alert("YOU WIN!!!");
+  //     // }
+  //
+  //   });
+  //
+  //
+  //
+  //
+  // });
+
+
+
+
+  (function(){
+
+    window.CatClick = window.CatClick || {};
+
+    var Game = window.CatClick.Game = function($el){
+      this.$el = $el;
+      this.attachHandlers();
+    };
+
+    Game.prototype.attachHandlers = function(){
+      this.$el.on("click", "button", this.clickButtonHandler.bind(this));
+
+      this.$el.on("click", "li", this.clickLiHandler.bind(this));
+    }
+
+    Game.prototype.clickButtonHandler = function(e){
+      var $html = $("<li></li><li></li><li></li>");
+      this.$el.find(".cat-click-grid").append($html);
+    };
+
+    Game.prototype.clickLiHandler = function(e){
+      var $li = $(e.currentTarget);
+      $li.toggleClass("clicked");
+    }
+
+  })();
+
+
+
+
+
+  $(document).on("ready", function(){
+
+    var $game1 = $("#cat-click-game-1");
+    new window.CatClick.Game($game1);
+
+    var $game2 = $("#cat-click-game-2");
+    new window.CatClick.Game($game2);
+
+    $("h1").on("mouseover", function(e){
+      alert('other questions?');
+    });
+
+  });
+
+
+
+  // 1) FUNCTION STYLE
+  // // this ? window/global
+  //
+  // 2) METHOD STYLE
+  // // this ? object called on / thing before dot
+  //
+  // 3) CONSTRUCTOR STYLE
+  // // this ? blank object / new instance
+  //
+  // 4) CALL/APPLY
+  // // this ? first argument / context
+
+
+
+
+  </script>
+
+</body>
+</html>

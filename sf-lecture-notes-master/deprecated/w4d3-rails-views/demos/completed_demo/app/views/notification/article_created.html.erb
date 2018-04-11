@@ -1,0 +1,11 @@
+<h1>Hello <%= @user.name %>!</h1>
+<p>
+  This e-mail is confirmation that your article titled <%= @article.title %> was 
+  successfully saved to the server. 
+
+  You'll find the article <%= link_to "here", article_url(@article) %>.
+</p>
+<p>
+  Regards,
+  Blogger Team
+</p>

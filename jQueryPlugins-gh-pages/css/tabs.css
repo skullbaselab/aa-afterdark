@@ -1,0 +1,86 @@
+html, body, main, ul, li, section, div, p, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+/* UTILS */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* STYLES */
+
+body {
+  font-family: sans-serif;
+  background: #ccc;
+}
+
+h1 {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
+main {
+  margin: 20px auto;
+  width: 500px;
+}
+
+.tabs {
+}
+
+.tabs > li {
+  float: left;
+}
+
+.tabs > li > a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+  background: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tabs > li > a:hover {
+  color: blue;
+}
+
+.tabs > li > a.is-active {
+  background: white;
+}
+
+.content-tabs {
+  background: white;
+  padding: 20px;
+}
+
+.content-tabs > article {
+  display: none;
+  transition: opacity 300ms linear;
+}
+
+.content-tabs > article.is-transitioning {
+  display: block;
+  opacity: 0;
+}
+
+.content-tabs > article.is-active {
+  display: block;
+  opacity: 1;
+}

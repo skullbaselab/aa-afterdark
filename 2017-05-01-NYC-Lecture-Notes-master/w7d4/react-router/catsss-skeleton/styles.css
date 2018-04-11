@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visiting {
+  text-decoration: underline;
+}
+
+body {
+  font-family: Coda;
+}
+
+header {
+  height: 75px;
+  font-family: Audiowide;
+  color: crimson;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+header > a {
+  display: block;
+  height: 75px;
+  line-height: 75px;
+}
+
+main {
+  background-color: lightcoral;
+}
+
+.cat-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cat-index-item {
+  padding: 20px;
+}
+
+a:hover {
+  color: yellow;
+  opacity: .75;
+}
+
+.cat-index-item img {
+  height: 200px;
+  width: 300px;
+}
+
+.cat-show {
+  background-color: lightgoldenrodyellow;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cat-show > h2 {
+  font-size: 50px;
+}
+
+.cat-show > img {
+  height: 400px;
+  width: 600px;
+}
+
+.cat-extra {
+  background-color: darkseagreen;
+}
+
+.cat-extra > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cat-extra > ul > li {
+  flex: 1;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.cat-extra-content {
+  padding: 20px;
+}
+
+.friends {
+  list-style: circle inside;
+}
+
+.four-zero-four {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.four-zero-four > img {
+  height: 400px;
+  width: 600px;
+}
+
+.four-zero-four > h1 {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.four-zero-four > button {
+  padding: 20px;
+  font-size: 20px;
+}

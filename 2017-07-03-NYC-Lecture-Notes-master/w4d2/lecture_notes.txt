@@ -1,0 +1,29 @@
+HTTP Request / Response Cycle
+
+REQUEST:
+ - query string - stuff after ?
+ - HTTP Method / Verb
+    - GET
+    - DELETE
+    - POST
+    - PATCH / PUT
+ - Path - stuff before ?
+    - www.website/users/1
+ - Body - information from a form
+
+RESPONSE:
+ - Status: 3 digit code to indicate how
+     the request was processed.
+    Examples: 404 (not found), 200(OK)
+ - Body: Data
+      HTML/CSS if its a render-able website
+      maybe just JSON if its just raw data
+
+Request Processing in Rails:
+  1) Router
+    - Looks at Verb/Method and Path
+    - Sends request to appropriate controller
+  2) Controller
+    - uses Models and Model methods to gather data
+    - packages up response and sends it back
+  3) Response goes back to client

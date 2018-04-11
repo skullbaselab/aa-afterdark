@@ -1,0 +1,211 @@
+/* --- RESET --- */
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small {
+
+}
+
+/* --- ELEMENTS --- */
+
+body {
+
+}
+
+ul {
+
+}
+
+img {
+
+}
+
+/* --- CLEARFIX --- */
+
+.group:after {
+
+}
+
+/* --- HEADER --- */
+
+.header {
+
+}
+
+.header a {
+
+}
+
+.header-nav {
+
+}
+
+.header-logo {
+
+}
+
+.header-list {
+
+}
+
+.header-list > li {
+
+}
+
+.badge {
+
+}
+
+/* --- CONTENT --- */
+
+.content {
+
+}
+
+.content-sidebar {
+
+}
+
+.content-main {
+
+}
+
+.content-header {
+
+}
+
+/* --- SIDEBAR --- */
+
+.profile-picture {
+
+}
+
+.online {
+
+}
+
+.profile-info {
+
+}
+
+.profile-info > h2 {
+
+}
+
+.profile-info > p {
+
+}
+
+.profile-nav {
+
+}
+
+.profile-nav > li {
+
+}
+
+.profile-nav > li:first-child {
+
+}
+
+.profile-nav a {
+
+}
+
+/* --- THUMB --- */
+
+.thumb {
+
+}
+
+/* --- FORM --- */
+
+.form {
+
+}
+
+.form-thumb {
+
+}
+
+.form-fieldset {
+
+}
+
+.input {
+
+}
+
+.input > label {
+
+}
+
+.input > input,
+.input > textarea {
+
+}
+
+.input > input {
+
+}
+
+.input > textarea {
+
+}
+
+.submit {
+
+}
+
+.submit > button {
+
+}
+
+/* --- POSTS --- */
+
+.posts {
+
+}
+
+.post {
+
+}
+
+.post:last-child {
+
+}
+
+.post-thumb {
+
+}
+
+.post-body {
+
+}
+
+.post-body > h2 {
+
+}
+
+.post-body > p {
+
+}
+
+/* --- FOOTER --- */
+
+.footer {
+
+}
+
+.footer-copy {
+
+}
+
+.footer-links {
+
+}
+
+.footer-links > li {
+
+}

@@ -1,0 +1,25 @@
+<% action = (cat.persisted? ? cat_url(cat) : cats_url) %>
+<% method = (cat.persisted? ? :patch : :post) %>
+
+<form action="<%= action %>" method="post">
+  <input type="hidden" name="_method" value="<%= method %>">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <label>Name
+
+    <input
+    type="text"
+    name="cat[name]"
+    value="<%= cat.name %>">
+    
+  </label>
+
+  <br>
+
+
+  <% submit_text = (cat.persisted? ? 'Update' : 'Create') + ' cat!' %>
+  <input type="submit" value="<%= submit_text %>">
+</form>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Auth!</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Oswald';
+        color: #444;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        background-color: #ff3850;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+      }
+      li {
+        text-align: left;
+        font-size: 28px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+      # 99 Cats Solution
+        - time_ago_in_words (ActionView documentation)
+        - approve! (transactions)
+        - routes
+        - link_to/button_to
+
+      ---
+      # Cookies
+        - HTTP is stateless. Nothing persists between request/response cycles.
+        - This is an intentional choice to prioritize efficiency, but it creates a problem.
+        - To solve this problem, we have COOKIES.
+
+      ---
+      ![alt text][cookies]
+      [cookies]: http://www.smileforcamera.com/blog/wp-content/uploads/2009/03/ccc.gif "one cool cookie"
+
+      ---
+      # Cookies (cont)
+        - A cookie is simply a packet of data
+        - Server sends it to the client, who then stores it
+        - Client will send it up to the server on every request
+        - Necessary for persistence between page loads
+
+      ---
+      # The Session Cookie
+        - A special cookie that expires when the user closes their browser
+        - Relatively secure compared to normal cookies
+        - Use it to store relevant session information
+        - We'll use this in a bit for auth purposes
+
+      ---
+      # Flash
+        - A special cookie that only persists for this cycle and the next
+        - Useful for persisting data for exactly one more req/res cycle
+        - Use cases include errors and notices
+        - Use with redirects
+
+      # Flash.now
+        - Not a cookie in itself - data stored here does not persist to the next cycle
+        - Useful for storing data in the Flash object that should not persist
+        - Use with renders
+      ---
+      # Auth
+        - **Authentication**: the process of verifying that a user is who they say they are
+        - Different from, but related to, **authorization**, which is the process of granting protected access to individuals or APIs based on their identity
+
+      ---
+      # Auth: Why?
+        - Serve up the correct content
+        - Protect sensitive data
+        - Allow for smooth user experience
+
+      ---
+      # The App Academy Auth Pattern 
+        - User model
+        - ApplicationController
+        - UsersController
+        - SessionsController
+        - Other controllers that use the current user
+        - Associated views
+
+      ---
+      # CSRF
+        - Cross Site Request Forgery
+        - Exploits the trust a site has in the browser
+        - Allows attackers to submit requests from an unrelated website while posing as an authorized user of your app
+      ---
+      # CSRF (cont)
+        - Rails Solution? The Auth Token
+
+        ```html
+        <input type="hidden" name="authenticity_token"
+            value=<%= form_authenticity_token %>>
+        ```
+
+        - This token tells the server that the request originated from our site
+        - Without this token, Rails will reject the request
+    </textarea>
+
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      const slideshow = remark.create();
+    </script>
+  </body>
+</html>

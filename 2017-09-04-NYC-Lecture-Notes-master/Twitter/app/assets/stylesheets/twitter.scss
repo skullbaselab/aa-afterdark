@@ -1,0 +1,103 @@
+body {
+  background: image-url('windows_xp_bliss-wide.jpg');
+  // text-align: center;
+}
+
+h2 {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hoot-logo {
+  display: block;
+  width: 50px;
+  margin: auto;
+}
+
+.auth-form-container {
+  position: relative;
+}
+
+.auth-form-box {
+  max-width: 500px;
+  min-width: 500px;
+  min-height: 00px;
+  box-sizing: border-box;
+  padding: 50px 45px;
+  background-color: white;
+  border-radius: 40px;
+  margin: 40px auto;
+  display: relative;
+  input[type="submit"] {
+    cursor: pointer;
+
+    background: lightblue;
+    border-radius: 4px;
+    color: black;
+    padding: 10px;
+    margin-left: 40%;
+  }
+}
+
+.auth-group {
+  position: relative;
+  margin: 20px 0px 35px 45px;
+  background-color: white;
+}
+
+.login-input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 285px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+
+  label {
+      font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    text-align: left;
+  }
+
+}
+
+.login-input:focus ~ label, input:valid ~ label {
+  top: -20px;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.errors {
+  text-align: center;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background: black;
+  transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}

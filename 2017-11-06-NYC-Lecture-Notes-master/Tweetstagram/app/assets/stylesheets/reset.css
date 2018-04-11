@@ -1,0 +1,11 @@
+body, h1, form, input, label {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}

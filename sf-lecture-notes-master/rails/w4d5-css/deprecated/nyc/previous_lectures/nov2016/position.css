@@ -1,0 +1,13 @@
+.outer {
+  position: relative;
+  background: red;
+  width: 400px;
+  height: 400px;
+}
+
+.inner {
+  position: absolute;
+  background: blue;
+  width: 200px;
+  height: 200px;
+}

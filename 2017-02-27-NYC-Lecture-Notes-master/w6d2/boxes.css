@@ -1,0 +1,29 @@
+body, h1, article {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  background: aliceblue;
+  /*background-color is more specific*/
+  /*background-color: aliceblue;*/
+  /*display: inline;*/
+  height: 200px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 3px solid black;
+  /*content-box is the default*/
+  box-sizing: content-box;
+  /*box-sizing: border-box*/
+
+}
+
+span {
+  background: pink;
+}
+
+/*common reset property for lis to get rid of bullets*/
+li {
+  list-style: none;
+}

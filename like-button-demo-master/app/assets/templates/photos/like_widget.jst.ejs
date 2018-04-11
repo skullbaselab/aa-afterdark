@@ -1,0 +1,13 @@
+<button class="btn btn-primary">
+  <% if (like.isNew()) { %>
+    <span class="glyphicon glyphicon-plus"></span>
+    Like
+  <% } else { %>
+    <span class="glyphicon glyphicon-minus"></span>
+    Unlike
+  <% } %>
+</button>
+
+<span class="like-info">
+  This photo has been liked <%= photo.escape("num_likes") %> time(s).
+</span>

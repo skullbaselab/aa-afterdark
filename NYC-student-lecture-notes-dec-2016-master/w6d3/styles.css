@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: yellow;
+  background: black;
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  min-height: 600px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,18 @@
+Create An Account
+<form action="<%= users_url %>" method="POST">
+  <label for="username">Username</label>
+  <input id="username" type="text" name="user[username]" value="<%= @user.username %>">
+
+  <label for="state">State</label>
+  <select id="state" name="user[state_id]">
+    <option disabled selected>Select a state</option>
+    <% State.all.each do |state| %>
+      <option value="<%= state.id %>"><%= state.name %></option>
+    <% end %>
+  </select>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="user[password]" value="">
+
+  <input id="password" type="submit" value="Create Account">
+</form>

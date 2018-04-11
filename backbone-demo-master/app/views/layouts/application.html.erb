@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BackboneDemo</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+
+  <%= javascript_include_tag "application" %>
+  <script src="http://api.filepicker.io/v1/filepicker.js"></script>
+  <script>filepicker.setKey("AFope1CblQNyyW1BH9Smkz");</script>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

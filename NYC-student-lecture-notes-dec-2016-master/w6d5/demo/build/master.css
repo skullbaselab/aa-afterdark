@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  padding: 15px;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.centered {
+  text-align: center;
+}

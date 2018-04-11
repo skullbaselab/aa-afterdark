@@ -1,0 +1,13 @@
+<!-- tweet.persisted? asks if the tweet exists in the database -->
+<% form_action = tweet.persisted? ? tweet_url(tweet) : tweets_url %>
+<% button_text = tweet.persisted? ? "Update Tweet" : "Create Tweet" %>
+
+<form action="<%= form_action %>" method="POST">
+  <% if tweet.persisted? %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <!-- nest body inside of tweet in params -->
+  <label for="body">Tweet Body</label>
+  <input id="body" value="<%= tweet.body %>" type="text" name="tweet[body]">
+  <input type="submit" value="<%= button_text %>">
+</form>

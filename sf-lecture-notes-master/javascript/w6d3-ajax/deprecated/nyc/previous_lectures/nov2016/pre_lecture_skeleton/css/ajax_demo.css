@@ -1,0 +1,65 @@
+html, body, h1, figure, ul, li, a {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  color: inherit;
+  box-sizing: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background: transparent;
+}
+
+body {
+  background: #ddd;
+  font-family: Roboto;
+}
+
+h1 {
+  color: #404;
+  font-size: 36px;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+a {
+  background: #cbc;
+  border: 1px solid #777;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #bab;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+a:hover {
+  box-shadow: none;
+  position: relative;
+  left: 1px;
+  top: 1px;
+}
+
+figure {
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  transition: all 1s;
+  z-index: -1;
+}
+
+figure.alert {
+  background: #ff6961;
+  opacity: 1;
+  transition: all 1s;
+  z-index: 2000;
+}

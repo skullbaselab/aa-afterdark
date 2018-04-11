@@ -1,0 +1,14 @@
+<h1> <%= @post.title %> </h1>
+
+By: <%= @post.author.username %>,
+on: <%= @post.publish_date %>,
+<%= link_to "edit post", edit_post_url(@post) %>
+<%= button_to "Delete", post_url(@post), method: :delete %>
+
+<br/>
+
+<%= link_to "All posts", posts_url %>
+
+<p>
+  <%= @post.body %>
+</p>

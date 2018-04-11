@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter</title>
+  <!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> -->
+  <!-- <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <% if logged_in? %>
+    <h2>Welcome <%= current_user.username %></h2>
+    <!-- log out button -->
+  <% else %>
+    <a href="<%= new_session_url %>">Log In</a>
+    <a href="<%= new_user_url %>">Sign Up</a>
+  <% end %>
+
+  <% if flash[:errors] %>
+    <ul>
+      <% flash[:errors].each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+<%= yield %>
+<!-- yield will render the view you explicitly asked to render -->
+
+</body>
+</html>

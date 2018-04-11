@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery: the 'j' is for 'Victory'</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <!-- this script gives us access to $ and all jquery methods -->
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .green {
+        color: green;
+      }
+
+      li {
+        color: red;
+      }
+    </style>
+
+    <script>
+      // this is run first
+      var potato = `<img id='potato' src="https://lh3.googleusercontent.com/-qRmDvvvSw70/V1JQ54e1lyI/AAAAAAAAAXs/INTs7fIUgug9O8UmuKeeUy9xJgE4TnkGw/w426-h409/Potato.png"/>`
+      //this code will run once all html content has loaded.
+      $(() => {
+        $(potato).insertAfter($('#eventor'))
+        //add submit event listiner to form.
+        $('form.submit-me').on('submit', (e) => {
+          //e is the jQuery event object that is passed into callback by default
+          e.preventDefault(); //important! prevent html form default behavior
+          debugger
+          //e.currentTarget --> htmlElement that active event listener is registered on
+          //e.target --> htmlElement that was interacted with
+          const $form = $(e.currentTarget);
+          const value = $form.find('input[type=text]').val();
+          const $li = $(`<li>${value}</li>`);
+          $('#new-li').append($li);
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h1 id='victory'>jQuery: the 'J' is for 'Victory'</h1>
+    <section>
+      <h2 id='selector'>Selector</h2>
+        <ul>
+          <li class='selector'>tag: <code>$('tag')</code></li>
+          <li id='uniqueSelector' class='selector'>id: <code>$('#idName')</code></li>
+          <li class='selector'>class: <code>$('.className')</code></li>
+          <li class='selector'>combo: <code>$('.className:lastChild')</code></li>
+        </ul>
+    </section>
+    <section class='manipulator-section'>
+      <h2 id='manipulator'>Manipulator</h2>
+      <ul>
+        <li class='make-me-gree'>css class: <code>$(selector).addClass('class')</code></li>
+        <li class='remove-me'>removal: <code>$(selector).detach()</code></li>
+        <li class='give-me-a-friend'>add after: <code>$(selector).insertAfter(htmlElement)</code></li>
+        <li class='give-us-a-sibling'>add after parent: <code>$(selector).parent().append(htmlElement)</code></li>
+      </ul>
+    </section>
+    <section>
+      <h2 id='eventor'>Eventor</h2>
+        <ul class='give-me-form-inputs'>
+          <li>initial script: <code>$(document).ready(func)</code></li>
+          <li>click: <code>$(selector).on("click", fun)</code></li>
+          <li>submit: <code>$(selector).on("submit", fun)</code></li>
+          <li>off: <code>$(selector).off("eventType", fun)</code></li>
+        </ul>
+        <button class='click-me'>Clicky</button>
+        <ul id='new-li'>
+        </ul>
+        <form class='submit-me'>
+          <label>New List Item
+            <input type='text'>
+          </label>
+          <input type="submit" name="Submit">
+        </form>
+    </section>
+    <div id='event-test'>
+      <button type="button" id="event-test-button" name="button">
+        Hey Im a button with an event listener registerd on me
+      </button>
+    </div>
+    <script>
+      // this is run last
+      // $(potato).insertAfter($('#eventor'));
+      $('div#event-test').on('click', (e) => {
+        debugger
+        //when user clicks on button:
+        ////e.currentTarget --> div
+        ////e.target --> button
+      })
+      $('button#event-test-button').on('click', (e) => {
+        //when user clicks on button:
+        ////e.currentTarget & e.target --> button
+        e.stopPropagation(); //this will stop from activating the click event defined on div#event-test
+        debugger
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+Stacks & Queues
+
+========Stack========
+LIFO - Last In First Out
+Only one direction for adding/removing
+In Ruby: push/pop or unshift/shift
+
+========Queue========
+FIFO - First In First Out
+Comes in one way, goes out the other
+In Ruby: unshift/pop or push/shift
+
+========Tree========
+Comprised of nodes
+Each node has (up to) one parent and (possibly many) children
+Each node also has a VALUE
+
+Do we need a tree class for this structure?
+NO - all we need is nodes
+Every node is actually a tree all on its own (comprised of at least one node)
+All we need for a tree is the relationships between nodes
+
+=======DFS=======
+DEPTH FIRST SEARCH
+Works with a stack structure
+Check this node, then one of its children, then that child's children
+All the way until we reach a childless node
+Then back up to the next child of the original node
+
+
+=======BFS=======
+BREADTH FIRST SEARCH
+Works with the idea of a queue structure
+Check this node first, then its children
+Don't check the grandchildren until all children are checked
+root, childA, childB, childAchild, childAchild, childBchild... etc
+
+Searches should not return the value you're searching for
+Searches should return the NODE that contains the value

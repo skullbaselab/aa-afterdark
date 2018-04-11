@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div {
+  padding: 10px;
+  width: 150px;
+  float: left;
+}
+
+article {
+
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.superheros {
+  background: beige;
+}
+
+.batman {
+  background: gray;
+  border: 5px solid yellow;
+}
+
+.superman {
+  background: blue;
+  border: 5px solid red;
+}
+
+.wonder-woman {
+  background: yellow;
+  border: 5px solid blue;
+}

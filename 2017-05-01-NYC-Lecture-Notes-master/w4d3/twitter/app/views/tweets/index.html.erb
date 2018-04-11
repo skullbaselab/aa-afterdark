@@ -1,0 +1,16 @@
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li>
+      <%= tweet.body %>
+      <%= " - #{tweet.user.name}" %>
+      <br>
+      <form class="" action="<%= tweet_url(tweet) %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="DELETE">
+
+      </form>
+
+      <a href="<%= edit_tweet_url(tweet) %>"> EDIT </a>
+    </li>
+  <% end %>
+</ul>

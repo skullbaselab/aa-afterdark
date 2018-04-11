@@ -1,0 +1,7 @@
+Unit testing
+- test specific methods
+- only test public methods
+- most important tests
+- don't test user input
+
+Integration testing (we'll get to later)

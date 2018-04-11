@@ -1,0 +1,16 @@
+.welcome {
+	background: white;
+	padding: 50px;
+	width: 300px;
+	line-height: 2;
+	border-radius: 3px;
+	border: 1px solid $light-gray;
+}
+
+.welcome a {
+	color: blue;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}

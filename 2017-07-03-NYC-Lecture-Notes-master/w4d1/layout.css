@@ -1,0 +1,21 @@
+.main {
+  width: 800px;
+  margin: auto;
+}
+
+div {
+  text-align: center
+}
+
+#modal-backdrop {
+  position: fixed;
+  background: rgba(0,0,0, 0.7);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.hide {
+  display: none;
+}

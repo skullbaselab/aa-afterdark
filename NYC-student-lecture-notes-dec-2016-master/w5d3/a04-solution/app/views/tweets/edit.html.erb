@@ -1,0 +1,19 @@
+<h1>Edit Tweet</h1>
+
+<form action="<%= tweet_url(@tweet) %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <%= auth_token_input %>
+
+  <label>
+    Title
+    <input type="text" name="tweet[title]" value="<%= @tweet.title %>">
+  </label>
+
+  <label>
+    Body
+    <textarea name="tweet[body]"><%= @tweet.body %></textarea>
+  </label>
+
+  <input type="submit" value="Update Tweet">
+</form>

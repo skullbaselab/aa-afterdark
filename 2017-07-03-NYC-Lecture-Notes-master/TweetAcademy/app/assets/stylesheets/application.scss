@@ -1,0 +1,168 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body, h1, h2, h3, ul, li, a, img, p, header {
+  padding: 0;
+  margin: 0;
+
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+
+  background: transparent;
+}
+
+body {
+  // background-image: url('/assets/background.jpg');
+  background-image: image-url('background.jpg'); // notice the hyphen!
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  color: black;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+.logo {
+  // display: block;
+  // margin: 0 auto;
+  padding-top: 15px;
+  font-size: 30px;
+  // width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  cursor: pointer;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+
+  & a {
+    color: black;
+    padding: 0 6px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+
+.greeting {
+  display: flex;
+  align-items: center;
+
+  & input[type="submit"] {
+    background: none;
+    color: black;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  & a {
+    padding: 0 4px;
+  }
+}
+
+.tweets {
+  font-size: 14px;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  h2 {
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 12px;
+
+    p {
+      padding-bottom: 8px;
+    }
+
+    span {
+      color: gray;
+      padding: 0px;
+      margin: 0px;
+      padding-bottom: 8px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  form {
+    text-align: center;
+  }
+}
+
+.active-nav-link {
+  font-weight: bold;
+}
+
+.user-card {
+  background: gainsboro;
+  width: 40%;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 4px;
+
+  a {
+    padding: 0 10px;
+  }
+}

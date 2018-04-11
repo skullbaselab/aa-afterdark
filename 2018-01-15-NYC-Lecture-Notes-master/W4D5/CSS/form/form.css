@@ -1,0 +1,57 @@
+body {
+  background-color: hotpink;
+}
+
+main {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  width: 1200px;
+  padding: 10px;
+  /* margin args: top right bottom left */
+  margin: 50px auto 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h3  {
+  font-size: 20px;
+  text-align: center;
+}
+
+form {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 275px;
+  margin-left: 75px;
+}
+
+input {
+  border: 1px solid black;
+  width: 60%;
+  margin: 10px 0;
+}
+
+input[type='submit'] {
+  background-color: yellow;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  width: 150px;
+  padding: 50px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+
+}

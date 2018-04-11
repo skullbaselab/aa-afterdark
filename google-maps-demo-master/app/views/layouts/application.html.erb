@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% if Rails.env.production? %>
+    <% api_key = "key=#{ENV['google_maps_key']}" %>
+  <% else %>
+    <% api_key = '' %>
+  <% end %>
+
+  <title>Google Maps Demo</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?<%= api_key %>"></script>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

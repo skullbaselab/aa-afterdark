@@ -1,0 +1,95 @@
+html, body, section, article,
+h1, h2, p, strong, em, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+  font-family: 'Amatic SC', cursive;
+  font-size: 45px;
+  text-align: center;
+}
+
+body {
+  background-image: url("http://www.dewallweb.com/wp-content/uploads/2015/11/Rainbow-Background-327-Best-Picture-Wallpaper.jpg");
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.megabox {
+  box-sizing: border-box;
+  border: 10px solid plum;
+  margin: auto;
+  width: 700px;
+  background: hotpink;
+}
+
+.megabox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.minibox {
+  width: 100px;
+  height: 100px;
+  float: right;
+  background: cornflowerblue;
+  line-height: 100px;
+  /*margin: 5px;*/
+}
+
+.minibox:hover {
+  background: wheat;
+  font-size: 50px;
+}
+
+/* second part */
+
+.innerthing {
+  background: wheat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 15 px;
+}
+
+.outerthing {
+  position: relative;
+  width: 200px;
+  background: coral;
+  left: 400px;
+}
+
+.flashing {
+  color: hotpink;
+}
+
+/* image */
+
+.capybara {
+  box-sizing: border-box;
+  margin: 20px auto;
+  width: 700px;
+  border: 20px solid cornflowerblue;
+  overflow: hidden;
+}
+
+.relative {
+  background-color: cornflowerblue;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  border: 10px solid coral;
+  top: 200px;
+}

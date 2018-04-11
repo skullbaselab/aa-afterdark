@@ -1,0 +1,21 @@
+# PUSHING TO HEROKU
+https://devcenter.heroku.com/articles/heroku-cli
+
+1. create app on heroku
+3. log into heroku on terminal
+2. add heroku remote: git remote add heroku [Heroku Git URL] OR heroku git:remote -a [project_name]
+3. add buildpacks
+  add Node FIRST then Ruby
+4. add postinstall script to package.json scripts
+  scripts: {
+    ...,
+    "postinstall": "webpack"
+  }
+5. add engines to package.json
+  "engines": {
+    "node": [yourNodeVersion],
+    "npm": [yourNpmVersion]
+  }
+6. gitignore bundle and node modules
+7. push to heroku
+8. heroku run rails db:migrate and heroku run rails db:seed

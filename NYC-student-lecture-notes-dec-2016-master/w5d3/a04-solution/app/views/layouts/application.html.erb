@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assessment04</title>
+</head>
+<body>
+
+<% if signed_in? %>
+  Hello, <%= current_user.username %>!
+  <%= button_to "Sign Out", session_url, :method => :delete %>
+<% else %>
+  <%= link_to "Sign In", new_session_url %>
+  <%= link_to "Log In", new_user_url %>
+<% end %>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |err| %>
+    <p>Error:</p>
+    <%= err %>
+  <% end %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

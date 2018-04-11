@@ -1,0 +1,42 @@
+ul {
+  margin-bottom: 50px;
+}
+
+li {
+  width: 600px;
+  height: 100px;
+  border: 3px solid red;
+  font-size: 40px;
+  margin: auto;
+  /*box-sizing: border-box;*/
+}
+
+.margin-a {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.margin-b {
+  margin-top: 100px;
+}
+
+.padding-a {
+  padding-bottom: 50px;
+}
+
+.padding-b {
+  padding-top: 50px;
+}
+
+.reference {
+  position: absolute;
+
+  bottom: -105px;
+  height: 100px;
+
+  right: -205px;
+  width: 200px;
+  background-image: url('../images/concorde-pear.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

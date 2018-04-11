@@ -1,0 +1,45 @@
+STACK (LAST IN FIRST OUT)
+  PUSH AND POP METHODS
+  CAN BE IMPLEMENTED WITH AN ARRAY
+    |      |
+    |      |
+    |      |
+    |      |
+    |      |
+    |      |
+    |______|
+
+
+QUEUE (FIRST IN FIRST OUT)
+  either PUSH + SHIFT or UNSHIFT + POP
+  CAN ALSO BE IMPLEMENTED WITH AN ARRAY
+  ----------------------
+    <--  <--  <--  <--
+  ----------------------
+
+
+TREE
+  - made up of nodes
+  - nodes have one parent, potentially many children, and a value
+  - node 1 is the root
+  - 4,5,6,7 are the leaves because they have no children
+  - binary trees have nodes that have at most 2 children
+     1
+   /   \
+  2     3
+ / \   / \
+4   5 6   7
+
+
+Depth First Search
+  - initially visited order: 1,2,4,5,3,6,7
+
+
+Breadth First Search
+  - initially visited order: 1,2,3,4,5,6,7
+  - use a queue
+  1) start by enqueuing root node
+  2) check if first node on queue is target, if it is return the node
+  3) if it is not target, shift it off the queue
+  4) enqueue that node's children
+  5) go back to step 2

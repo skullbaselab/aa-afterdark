@@ -1,0 +1,16 @@
+<h3>New Comment</h3>
+<form>
+  <input type="hidden"
+         name="comment[todo_id]"
+         value="<%= todo.escape("id") %>">
+
+  <label>
+    Comment Content
+    <textarea name="comment[content]"></textarea>
+  </label>
+
+  <input type="submit">
+</form>
+
+<div class="preview">
+</div>

@@ -1,0 +1,14 @@
+<!-- Index View Goes Here -->
+<%#= 1 + 2 %>
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li>
+      <%= tweet.body %>
+      <form class="" action="<%= tweet_url(tweet) %>" method="post">
+        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="name" value="Delete Tweet">
+      </form>
+    </li>
+  <% end %>
+</ul>

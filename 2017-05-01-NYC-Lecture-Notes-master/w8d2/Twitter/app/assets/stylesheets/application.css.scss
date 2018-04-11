@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ .my-header {
+   font-family: Barrio;
+   background: white;
+   color: blue;
+   display: flex;
+   justify-content: space-between;
+   font-size: 30px;
+   border-bottom: 1px solid blue;
+   align-items: center;
+ }
+
+ .right-nav {
+   display: flex;
+ }
+
+ .form-wrapper {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 50px;
+ }
+
+ a {
+  display: block;
+  margin: 0 10px;
+ }
+
+ input {
+   box-shadow: 0 0 10px gold;
+   margin: 10px;
+   padding: 5px;
+   background-color: white;
+ }
+
+ li {
+   display: block;
+   width: 600px;
+   font-family: Pacifico;
+   font-size: 20px;
+   margin:  10px auto;
+   box-shadow: 0 0 20px blue;
+   padding: 10px;
+ }
+
+ main {
+   display: flex;
+
+ }
+
+ body {
+   background-image: image-url('background.jpg');
+ }
+
+ button {
+   background: blue;
+   color: white;
+   font-family: Barrio;
+   padding: 5px;
+ }
+
+ .logo {
+   height: 80px;
+   width: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ .tweet {
+   background-color: white;
+ }

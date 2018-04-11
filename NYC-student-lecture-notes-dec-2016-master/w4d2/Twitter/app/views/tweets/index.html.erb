@@ -1,0 +1,22 @@
+<h1>All the tweets</h1>
+
+<!-- embedded ruby evaluated before html is sent -->
+
+<!-- "-tab" shortcut -->
+<% 2 + 2 %>
+
+<!-- "=tab" shortcut -->
+<%#= "3 + 2" %>
+
+<ul>
+  <!-- vv no return value needed -->
+  <% @tweets.each do |tweet| %>
+    <li>
+      <!-- vv we want the retun value here -->
+      <%= tweet.body %>
+      <br>
+      <%= tweet.author.username %>
+    </li>
+    <!-- vv gotta have the end! -->
+  <% end %>
+</ul>

@@ -1,0 +1,120 @@
+ * First: Any specific questions about checkers solution?
+ Not going to do demo of checkers, but could explain the solution.
+
+=====RSPEC BASICS=====
+
+ * Why learn RSpec?
+  - Debugging
+  - Maintaining
+  - Jobs
+
+
+
+
+
+
+
+
+
+
+
+
+ * What is RSpec?
+ - Just a Ruby library
+ - All of the 'magic' methods are still Ruby methods
+ - Gems are libraries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * TDD: Test Driven Development
+  1) Write the test
+  2) Watch it fail (Red)
+  3) Write code to make it pass (Green)
+  4) Go back and refactor the code (Refactor)
+  - This is the 'Red, green, refactor' approach
+  - Not often used irl, but good for practice
+  - AND many places admire TDD
+
+
+
+
+
+
+
+
+
+
+
+
+ * What to test?
+ - Public methods, 
+ because if those work the private ones should work too
+ - ALL the public methods (be thorough today)
+ - You already know OO programming; focus on RSpec and testing today.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * Setting Up and Syntax
+ - Demo
+ - 'should' vs. 'expect' (old and new syntax)
+ - You won't use rake today
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * Read the Docs
+ - In general, towards the end of each unit (Ruby, SQL, Rails),
+ we will expect you to read the docs and use google.
+ - This is good; reading documentation is a skill.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ALSO Please do warm-up project first ("First TDD Projects")
