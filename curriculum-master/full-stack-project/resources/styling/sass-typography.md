@@ -119,4 +119,4 @@ typography [here][awesome-google-fonts] is nice.
 
 [serifs]:https://en.wikipedia.org/wiki/Serif
 [google-web-fonts]:http://www.google.com/fonts
-[awesome-google-fonts]:http://hellohappy.org/beautiful-web-type/
+[awesome-google-fonts]:https://beautifulwebtype.com
